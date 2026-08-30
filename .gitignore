@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+harvest_wide.log
+observations_wide.csv
+markets_wide.csv

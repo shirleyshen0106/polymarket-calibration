@@ -1,0 +1,530 @@
+market_id,question,category,volume,horizon_hours,quoted_prob,outcome,quote_gap_hours,end_date
+563650,"SCOTUS accepts sports event contract case by July 31, 2026?     ",scotus-accepts-sports-event-contract-case-by-july-31-2026,960210.46,24,0.001,0,0.02,2026-08-01T03:59:00Z
+563650,"SCOTUS accepts sports event contract case by July 31, 2026?     ",scotus-accepts-sports-event-contract-case-by-july-31-2026,960210.46,1,0.001,0,0.02,2026-08-01T03:59:00Z
+599303,Will Mallory McMorrow win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,135162.02,24,0.0005,0,0.0,2026-08-04T00:00:00Z
+599303,Will Mallory McMorrow win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,135162.02,1,0.0005,0,0.0,2026-08-04T00:00:00Z
+599304,Will Haley Stevens win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,1430894.62,24,0.025,0,0.0,2026-08-04T00:00:00Z
+599304,Will Haley Stevens win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,1430894.62,1,0.018,0,0.0,2026-08-04T00:00:00Z
+599305,Will Abdul El-Sayed win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,2455198.11,24,0.972,1,0.0,2026-08-04T00:00:00Z
+599305,Will Abdul El-Sayed win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,2455198.11,1,0.9825,1,0.01,2026-08-04T00:00:00Z
+599306,Will Dana Nessel win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,72742.78,24,0.0005,0,0.0,2026-08-04T00:00:00Z
+599306,Will Dana Nessel win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,72742.78,1,0.0005,0,0.01,2026-08-04T00:00:00Z
+599307,Will Rashida Tlaib win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,77267.35,24,0.0005,0,0.0,2026-08-04T00:00:00Z
+599307,Will Rashida Tlaib win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,77267.35,1,0.0005,0,0.0,2026-08-04T00:00:00Z
+599308,Will Sarah Anthony win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,50107.75,24,0.0005,0,0.0,2026-08-04T00:00:00Z
+599308,Will Sarah Anthony win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,50107.75,1,0.0005,0,0.0,2026-08-04T00:00:00Z
+599309,Will Kristen McDonald Rivet win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,155974.68,24,0.0005,0,0.0,2026-08-04T00:00:00Z
+599309,Will Kristen McDonald Rivet win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,155974.68,1,0.0005,0,0.0,2026-08-04T00:00:00Z
+599310,Will Andy Levin win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,49125.79,24,0.0005,0,0.0,2026-08-04T00:00:00Z
+599310,Will Andy Levin win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,49125.79,1,0.0005,0,0.0,2026-08-04T00:00:00Z
+599311,Will Matt Sahr win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,138183.83,24,0.0005,0,0.0,2026-08-04T00:00:00Z
+599311,Will Matt Sahr win the 2026 Michigan Democratic Primary?,michigan-democratic-senate-primary-winner,138183.83,1,0.0005,0,0.0,2026-08-04T00:00:00Z
+700645,Will Ashley B. Moody be the Republican nominee for Senate in Florida?,florida-republican-senate-primary-winner,11540.06,168,0.989,1,0.01,2026-08-18T00:00:00Z
+700645,Will Ashley B. Moody be the Republican nominee for Senate in Florida?,florida-republican-senate-primary-winner,11540.06,24,0.997,1,0.0,2026-08-18T00:00:00Z
+700645,Will Ashley B. Moody be the Republican nominee for Senate in Florida?,florida-republican-senate-primary-winner,11540.06,1,0.989,1,0.0,2026-08-18T00:00:00Z
+704051,Will Jeremy Moss be the Democratic nominee for MI-11?,mi-11-democratic-primary-winner,31760.93,24,0.91,1,0.0,2026-08-04T00:00:00Z
+704051,Will Jeremy Moss be the Democratic nominee for MI-11?,mi-11-democratic-primary-winner,31760.93,1,0.9255,1,0.0,2026-08-04T00:00:00Z
+704052,Will Aisha Farooqi be the Democratic nominee for MI-11?,mi-11-democratic-primary-winner,25982.62,24,0.0885,0,0.0,2026-08-04T00:00:00Z
+704052,Will Aisha Farooqi be the Democratic nominee for MI-11?,mi-11-democratic-primary-winner,25982.62,1,0.0675,0,0.0,2026-08-04T00:00:00Z
+704256,Will Wesley Bell be the Democratic nominee for MO-01?,mo-01-democratic-primary-winner,292081.34,24,0.695,1,0.0,2026-08-04T00:00:00Z
+704256,Will Wesley Bell be the Democratic nominee for MO-01?,mo-01-democratic-primary-winner,292081.34,1,0.655,1,0.01,2026-08-04T00:00:00Z
+704257,Will Cori Bush be the Democratic nominee for MO-01?,mo-01-democratic-primary-winner,342550.49,24,0.31,0,0.0,2026-08-04T00:00:00Z
+704257,Will Cori Bush be the Democratic nominee for MO-01?,mo-01-democratic-primary-winner,342550.49,1,0.345,0,0.01,2026-08-04T00:00:00Z
+704423,Will Madison Cawthorn be the Republican nominee for FL-19?,fl-19-republican-primary-winner,11170.62,168,0.035,0,0.01,2026-08-18T00:00:00Z
+704423,Will Madison Cawthorn be the Republican nominee for FL-19?,fl-19-republican-primary-winner,11170.62,24,0.0015,0,0.01,2026-08-18T00:00:00Z
+704423,Will Madison Cawthorn be the Republican nominee for FL-19?,fl-19-republican-primary-winner,11170.62,1,0.0005,0,0.0,2026-08-18T00:00:00Z
+704424,Will Catalina Lauf be the Republican nominee for FL-19?,fl-19-republican-primary-winner,89483.73,168,0.36,0,0.01,2026-08-18T00:00:00Z
+704424,Will Catalina Lauf be the Republican nominee for FL-19?,fl-19-republican-primary-winner,89483.73,24,0.825,0,0.01,2026-08-18T00:00:00Z
+704424,Will Catalina Lauf be the Republican nominee for FL-19?,fl-19-republican-primary-winner,89483.73,1,0.895,0,0.01,2026-08-18T00:00:00Z
+704425,Will Bob Rommel be the Republican nominee for FL-19?,fl-19-republican-primary-winner,43806.74,168,0.0155,0,0.01,2026-08-18T00:00:00Z
+704425,Will Bob Rommel be the Republican nominee for FL-19?,fl-19-republican-primary-winner,43806.74,24,0.0005,0,0.01,2026-08-18T00:00:00Z
+704425,Will Bob Rommel be the Republican nominee for FL-19?,fl-19-republican-primary-winner,43806.74,1,0.0005,0,0.01,2026-08-18T00:00:00Z
+704426,Will Spencer Roach be the Republican nominee for FL-19?,fl-19-republican-primary-winner,42302.65,168,0.007,0,0.01,2026-08-18T00:00:00Z
+704426,Will Spencer Roach be the Republican nominee for FL-19?,fl-19-republican-primary-winner,42302.65,24,0.0005,0,0.01,2026-08-18T00:00:00Z
+704426,Will Spencer Roach be the Republican nominee for FL-19?,fl-19-republican-primary-winner,42302.65,1,0.0005,0,0.01,2026-08-18T00:00:00Z
+704427,Will Jim Oberweis be the Republican nominee for FL-19?,fl-19-republican-primary-winner,14749.85,168,0.1075,0,0.01,2026-08-18T00:00:00Z
+704427,Will Jim Oberweis be the Republican nominee for FL-19?,fl-19-republican-primary-winner,14749.85,24,0.0175,0,0.01,2026-08-18T00:00:00Z
+704427,Will Jim Oberweis be the Republican nominee for FL-19?,fl-19-republican-primary-winner,14749.85,1,0.0105,0,0.01,2026-08-18T00:00:00Z
+704428,Will Jim Schwartzel be the Republican nominee for FL-19?,fl-19-republican-primary-winner,38170.87,168,0.401,1,0.01,2026-08-18T00:00:00Z
+704428,Will Jim Schwartzel be the Republican nominee for FL-19?,fl-19-republican-primary-winner,38170.87,24,0.1505,1,0.01,2026-08-18T00:00:00Z
+704428,Will Jim Schwartzel be the Republican nominee for FL-19?,fl-19-republican-primary-winner,38170.87,1,0.1005,1,0.01,2026-08-18T00:00:00Z
+704474,Will Byron Donalds be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,1495808.98,168,0.986,1,0.01,2026-08-18T00:00:00Z
+704474,Will Byron Donalds be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,1495808.98,24,0.9895,1,0.01,2026-08-18T00:00:00Z
+704474,Will Byron Donalds be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,1495808.98,1,0.9915,1,0.0,2026-08-18T00:00:00Z
+704475,Will James Fishback be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,6462255.49,168,0.007,0,0.01,2026-08-18T00:00:00Z
+704475,Will James Fishback be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,6462255.49,24,0.009,0,0.01,2026-08-18T00:00:00Z
+704475,Will James Fishback be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,6462255.49,1,0.008,0,0.01,2026-08-18T00:00:00Z
+704476,Will Wilton Simpson be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,83086.18,168,0.0005,0,0.01,2026-08-18T00:00:00Z
+704476,Will Wilton Simpson be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,83086.18,24,0.0005,0,0.01,2026-08-18T00:00:00Z
+704476,Will Wilton Simpson be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,83086.18,1,0.0005,0,0.01,2026-08-18T00:00:00Z
+704477,Will Jay Collins be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,1419766.75,168,0.0065,0,0.01,2026-08-18T00:00:00Z
+704477,Will Jay Collins be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,1419766.75,24,0.0005,0,0.01,2026-08-18T00:00:00Z
+704477,Will Jay Collins be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,1419766.75,1,0.0015,0,0.01,2026-08-18T00:00:00Z
+704478,Will Casey DeSantis be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,227503.95,168,0.0005,0,0.01,2026-08-18T00:00:00Z
+704478,Will Casey DeSantis be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,227503.95,24,0.0005,0,0.01,2026-08-18T00:00:00Z
+704478,Will Casey DeSantis be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,227503.95,1,0.0005,0,0.01,2026-08-18T00:00:00Z
+704479,Will Jimmy Patronis be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,54194.71,168,0.0005,0,0.01,2026-08-18T00:00:00Z
+704479,Will Jimmy Patronis be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,54194.71,24,0.0005,0,0.0,2026-08-18T00:00:00Z
+704479,Will Jimmy Patronis be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,54194.71,1,0.0005,0,0.0,2026-08-18T00:00:00Z
+704480,Will Matt Gaetz be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,52967.6,168,0.0005,0,0.01,2026-08-18T00:00:00Z
+704480,Will Matt Gaetz be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,52967.6,24,0.0005,0,0.01,2026-08-18T00:00:00Z
+704480,Will Matt Gaetz be the Republican nominee for Florida Governor?,republican-nominee-for-florida-governor,52967.6,1,0.0005,0,0.01,2026-08-18T00:00:00Z
+704499,Will David Jolly be the Democratic nominee for Florida Governor?,democratic-nominee-for-florida-governor,13073.1,168,0.9825,1,0.01,2026-08-18T00:00:00Z
+704499,Will David Jolly be the Democratic nominee for Florida Governor?,democratic-nominee-for-florida-governor,13073.1,24,0.997,1,0.01,2026-08-18T00:00:00Z
+704499,Will David Jolly be the Democratic nominee for Florida Governor?,democratic-nominee-for-florida-governor,13073.1,1,0.997,1,0.01,2026-08-18T00:00:00Z
+704500,Will Jerry Demings be the Democratic nominee for Florida Governor?,democratic-nominee-for-florida-governor,15178.95,168,0.0085,0,0.01,2026-08-18T00:00:00Z
+704500,Will Jerry Demings be the Democratic nominee for Florida Governor?,democratic-nominee-for-florida-governor,15178.95,24,0.0025,0,0.01,2026-08-18T00:00:00Z
+704500,Will Jerry Demings be the Democratic nominee for Florida Governor?,democratic-nominee-for-florida-governor,15178.95,1,0.0035,0,0.01,2026-08-18T00:00:00Z
+706082,Will Sandy Spidel Neumann be the Democratic nominee for Senate in Kansas?,kansas-democratic-senate-primary-winner,38656.31,24,0.0065,0,0.0,2026-08-04T00:00:00Z
+706082,Will Sandy Spidel Neumann be the Democratic nominee for Senate in Kansas?,kansas-democratic-senate-primary-winner,38656.31,1,0.0065,0,0.0,2026-08-04T00:00:00Z
+706083,Will Christy Davis be the Democratic nominee for Senate in Kansas?,kansas-democratic-senate-primary-winner,39685.28,24,0.0175,0,0.0,2026-08-04T00:00:00Z
+706083,Will Christy Davis be the Democratic nominee for Senate in Kansas?,kansas-democratic-senate-primary-winner,39685.28,1,0.012,0,0.01,2026-08-04T00:00:00Z
+706085,Will Anne Parelkar be the Democratic nominee for Senate in Kansas?,kansas-democratic-senate-primary-winner,19979.09,24,0.0005,0,0.0,2026-08-04T00:00:00Z
+706085,Will Anne Parelkar be the Democratic nominee for Senate in Kansas?,kansas-democratic-senate-primary-winner,19979.09,1,0.0005,0,0.01,2026-08-04T00:00:00Z
+706087,Will Patrick Schmidt be the Democratic nominee for Senate in Kansas?,kansas-democratic-senate-primary-winner,23268.07,24,0.0055,0,0.0,2026-08-04T00:00:00Z
+706087,Will Patrick Schmidt be the Democratic nominee for Senate in Kansas?,kansas-democratic-senate-primary-winner,23268.07,1,0.0055,0,0.0,2026-08-04T00:00:00Z
+706089,Will Adam Hamilton be the Democratic nominee for Senate in Kansas?,kansas-democratic-senate-primary-winner,32041.6,24,0.956,1,0.0,2026-08-04T00:00:00Z
+706089,Will Adam Hamilton be the Democratic nominee for Senate in Kansas?,kansas-democratic-senate-primary-winner,32041.6,1,0.96,1,0.0,2026-08-04T00:00:00Z
+787547,Will Kaela Berg be the Democratic nominee for MN-02?,who-will-be-the-democratic-nominee-for-mn-02,12769.43,168,0.1345,0,0.0,2026-08-11T00:00:00Z
+787547,Will Kaela Berg be the Democratic nominee for MN-02?,who-will-be-the-democratic-nominee-for-mn-02,12769.43,24,0.016,0,0.01,2026-08-11T00:00:00Z
+787547,Will Kaela Berg be the Democratic nominee for MN-02?,who-will-be-the-democratic-nominee-for-mn-02,12769.43,1,0.0045,0,0.0,2026-08-11T00:00:00Z
+787548,Will Matt Klein be the Democratic nominee for MN-02?,who-will-be-the-democratic-nominee-for-mn-02,29692.21,168,0.0905,0,0.0,2026-08-11T00:00:00Z
+787548,Will Matt Klein be the Democratic nominee for MN-02?,who-will-be-the-democratic-nominee-for-mn-02,29692.21,24,0.331,0,0.0,2026-08-11T00:00:00Z
+787548,Will Matt Klein be the Democratic nominee for MN-02?,who-will-be-the-democratic-nominee-for-mn-02,29692.21,1,0.2535,0,0.0,2026-08-11T00:00:00Z
+787549,Will Matt Little be the Democratic nominee for MN-02?,who-will-be-the-democratic-nominee-for-mn-02,77991.19,168,0.765,1,0.0,2026-08-11T00:00:00Z
+787549,Will Matt Little be the Democratic nominee for MN-02?,who-will-be-the-democratic-nominee-for-mn-02,77991.19,24,0.65,1,0.0,2026-08-11T00:00:00Z
+787549,Will Matt Little be the Democratic nominee for MN-02?,who-will-be-the-democratic-nominee-for-mn-02,77991.19,1,0.755,1,0.0,2026-08-11T00:00:00Z
+799357,Will Royce White be the Republican nominee for Senate in Minnesota?,minnesota-republican-senate-primary-winner,37736.15,168,0.007,0,0.0,2026-08-11T00:00:00Z
+799357,Will Royce White be the Republican nominee for Senate in Minnesota?,minnesota-republican-senate-primary-winner,37736.15,24,0.007,0,0.01,2026-08-11T00:00:00Z
+799357,Will Royce White be the Republican nominee for Senate in Minnesota?,minnesota-republican-senate-primary-winner,37736.15,1,0.005,0,0.0,2026-08-11T00:00:00Z
+799361,Will Adam Schwarze be the Republican nominee for Senate in Minnesota?,minnesota-republican-senate-primary-winner,11948.35,168,0.021,0,0.0,2026-08-11T00:00:00Z
+799361,Will Adam Schwarze be the Republican nominee for Senate in Minnesota?,minnesota-republican-senate-primary-winner,11948.35,24,0.015,0,0.01,2026-08-11T00:00:00Z
+799361,Will Adam Schwarze be the Republican nominee for Senate in Minnesota?,minnesota-republican-senate-primary-winner,11948.35,1,0.0085,0,0.0,2026-08-11T00:00:00Z
+799364,Will David Hann be the Republican nominee for Senate in Minnesota?,minnesota-republican-senate-primary-winner,24038.54,168,0.0005,0,0.0,2026-08-11T00:00:00Z
+799364,Will David Hann be the Republican nominee for Senate in Minnesota?,minnesota-republican-senate-primary-winner,24038.54,24,0.0005,0,0.0,2026-08-11T00:00:00Z
+799364,Will David Hann be the Republican nominee for Senate in Minnesota?,minnesota-republican-senate-primary-winner,24038.54,1,0.0005,0,0.0,2026-08-11T00:00:00Z
+799368,Will Michele Tafoya be the Republican nominee for Senate in Minnesota?,minnesota-republican-senate-primary-winner,13534.12,168,0.9765,1,0.0,2026-08-11T00:00:00Z
+799368,Will Michele Tafoya be the Republican nominee for Senate in Minnesota?,minnesota-republican-senate-primary-winner,13534.12,24,0.9855,1,0.01,2026-08-11T00:00:00Z
+799368,Will Michele Tafoya be the Republican nominee for Senate in Minnesota?,minnesota-republican-senate-primary-winner,13534.12,1,0.9925,1,0.0,2026-08-11T00:00:00Z
+799419,Will Peggy Flanagan be the Democratic nominee for Senate in Minnesota?,minnesota-democratic-senate-primary-winner,255923.23,168,0.865,1,0.0,2026-08-11T00:00:00Z
+799419,Will Peggy Flanagan be the Democratic nominee for Senate in Minnesota?,minnesota-democratic-senate-primary-winner,255923.23,24,0.71,1,0.0,2026-08-11T00:00:00Z
+799419,Will Peggy Flanagan be the Democratic nominee for Senate in Minnesota?,minnesota-democratic-senate-primary-winner,255923.23,1,0.705,1,0.0,2026-08-11T00:00:00Z
+799420,Will Angie Craig be the Democratic nominee for Senate in Minnesota?,minnesota-democratic-senate-primary-winner,153321.98,168,0.12,0,0.0,2026-08-11T00:00:00Z
+799420,Will Angie Craig be the Democratic nominee for Senate in Minnesota?,minnesota-democratic-senate-primary-winner,153321.98,24,0.295,0,0.01,2026-08-11T00:00:00Z
+799420,Will Angie Craig be the Democratic nominee for Senate in Minnesota?,minnesota-democratic-senate-primary-winner,153321.98,1,0.305,0,0.0,2026-08-11T00:00:00Z
+799422,Will Ilhan Omar be the Democratic nominee for Senate in Minnesota?,minnesota-democratic-senate-primary-winner,11292.91,168,0.0005,0,0.0,2026-08-11T00:00:00Z
+799422,Will Ilhan Omar be the Democratic nominee for Senate in Minnesota?,minnesota-democratic-senate-primary-winner,11292.91,24,0.0005,0,0.01,2026-08-11T00:00:00Z
+799422,Will Ilhan Omar be the Democratic nominee for Senate in Minnesota?,minnesota-democratic-senate-primary-winner,11292.91,1,0.0005,0,0.0,2026-08-11T00:00:00Z
+799424,Will Melisa Hortman be the Democratic nominee for Senate in Minnesota?,minnesota-democratic-senate-primary-winner,10117.74,168,0.0005,0,28.0,2026-08-11T00:00:00Z
+799876,Will Jared Moskowitz be the Democratic nominee for Senate in Florida?,florida-democratic-senate-primary-winner,52959.94,168,0.0005,0,0.01,2026-08-18T00:00:00Z
+799876,Will Jared Moskowitz be the Democratic nominee for Senate in Florida?,florida-democratic-senate-primary-winner,52959.94,24,0.0005,0,0.01,2026-08-18T00:00:00Z
+799876,Will Jared Moskowitz be the Democratic nominee for Senate in Florida?,florida-democratic-senate-primary-winner,52959.94,1,0.0005,0,0.01,2026-08-18T00:00:00Z
+799879,Will Alexander Vindman be the Democratic nominee for Senate in Florida?,florida-democratic-senate-primary-winner,99614.48,168,0.9265,0,0.01,2026-08-18T00:00:00Z
+799879,Will Alexander Vindman be the Democratic nominee for Senate in Florida?,florida-democratic-senate-primary-winner,99614.48,24,0.926,0,0.01,2026-08-18T00:00:00Z
+799879,Will Alexander Vindman be the Democratic nominee for Senate in Florida?,florida-democratic-senate-primary-winner,99614.48,1,0.9185,0,0.0,2026-08-18T00:00:00Z
+799881,Will Jennifer Jenkins be the Democratic nominee for Senate in Florida?,florida-democratic-senate-primary-winner,36724.41,168,0.0005,0,0.01,2026-08-18T00:00:00Z
+799881,Will Jennifer Jenkins be the Democratic nominee for Senate in Florida?,florida-democratic-senate-primary-winner,36724.41,24,0.0005,0,0.01,2026-08-18T00:00:00Z
+799881,Will Jennifer Jenkins be the Democratic nominee for Senate in Florida?,florida-democratic-senate-primary-winner,36724.41,1,0.0005,0,0.01,2026-08-18T00:00:00Z
+799883,Will Angie Nixon be the Democratic nominee for Senate in Florida?,florida-democratic-senate-primary-winner,88123.22,168,0.0735,1,0.01,2026-08-18T00:00:00Z
+799883,Will Angie Nixon be the Democratic nominee for Senate in Florida?,florida-democratic-senate-primary-winner,88123.22,24,0.0755,1,0.01,2026-08-18T00:00:00Z
+799883,Will Angie Nixon be the Democratic nominee for Senate in Florida?,florida-democratic-senate-primary-winner,88123.22,1,0.0725,1,0.01,2026-08-18T00:00:00Z
+826114,Will Josh Elliott win the 2026 Connecticut Governor Democratic primary election?,connecticut-governor-democratic-primary-winner,19323.11,168,0.022,0,0.0,2026-08-11T00:00:00Z
+826114,Will Josh Elliott win the 2026 Connecticut Governor Democratic primary election?,connecticut-governor-democratic-primary-winner,19323.11,24,0.0075,0,0.0,2026-08-11T00:00:00Z
+826114,Will Josh Elliott win the 2026 Connecticut Governor Democratic primary election?,connecticut-governor-democratic-primary-winner,19323.11,1,0.005,0,0.0,2026-08-11T00:00:00Z
+826115,Will Ned Lamont win the 2026 Connecticut Governor Democratic primary election?,connecticut-governor-democratic-primary-winner,26002.47,168,0.9775,1,0.0,2026-08-11T00:00:00Z
+826115,Will Ned Lamont win the 2026 Connecticut Governor Democratic primary election?,connecticut-governor-democratic-primary-winner,26002.47,24,0.992,1,0.01,2026-08-11T00:00:00Z
+826115,Will Ned Lamont win the 2026 Connecticut Governor Democratic primary election?,connecticut-governor-democratic-primary-winner,26002.47,1,0.995,1,0.0,2026-08-11T00:00:00Z
+826144,Will Ryan Fazio win the 2026 Connecticut Governor Republican primary election?,connecticut-governor-republican-primary-winner,11546.41,168,0.9905,1,0.0,2026-08-11T00:00:00Z
+826144,Will Ryan Fazio win the 2026 Connecticut Governor Republican primary election?,connecticut-governor-republican-primary-winner,11546.41,24,0.9955,1,0.0,2026-08-11T00:00:00Z
+826144,Will Ryan Fazio win the 2026 Connecticut Governor Republican primary election?,connecticut-governor-republican-primary-winner,11546.41,1,0.996,1,0.0,2026-08-11T00:00:00Z
+904391,Will Jeff Colyer win the 2026 Kansas Governor Republican primary election?,kansas-governor-republican-primary-winner,25937.5,24,0.0005,0,0.0,2026-08-04T00:00:00Z
+904391,Will Jeff Colyer win the 2026 Kansas Governor Republican primary election?,kansas-governor-republican-primary-winner,25937.5,1,0.0005,0,0.01,2026-08-04T00:00:00Z
+904393,Will Ty Masterson win the 2026 Kansas Governor Republican primary election?,kansas-governor-republican-primary-winner,70843.81,24,0.89,1,0.0,2026-08-04T00:00:00Z
+904393,Will Ty Masterson win the 2026 Kansas Governor Republican primary election?,kansas-governor-republican-primary-winner,70843.81,1,0.935,1,0.0,2026-08-04T00:00:00Z
+904396,Will Philip Sarnecki win the 2026 Kansas Governor Republican primary election?,kansas-governor-republican-primary-winner,42274.88,24,0.1105,0,0.0,2026-08-04T00:00:00Z
+904396,Will Philip Sarnecki win the 2026 Kansas Governor Republican primary election?,kansas-governor-republican-primary-winner,42274.88,1,0.0605,0,0.01,2026-08-04T00:00:00Z
+904437,Will Ethan Corson win the 2026 Kansas Governor Democratic primary election?,kansas-governor-democratic-primary-winner,37358.88,24,0.125,0,0.0,2026-08-04T00:00:00Z
+904437,Will Ethan Corson win the 2026 Kansas Governor Democratic primary election?,kansas-governor-democratic-primary-winner,37358.88,1,0.079,0,0.0,2026-08-04T00:00:00Z
+904438,Will Marty Tuley win the 2026 Kansas Governor Democratic primary election?,kansas-governor-democratic-primary-winner,49954.01,24,0.0005,0,0.0,2026-08-04T00:00:00Z
+904438,Will Marty Tuley win the 2026 Kansas Governor Democratic primary election?,kansas-governor-democratic-primary-winner,49954.01,1,0.0005,0,0.01,2026-08-04T00:00:00Z
+904439,Will Cindy Holscher win the 2026 Kansas Governor Democratic primary election?,kansas-governor-democratic-primary-winner,46657.98,24,0.885,1,0.0,2026-08-04T00:00:00Z
+904439,Will Cindy Holscher win the 2026 Kansas Governor Democratic primary election?,kansas-governor-democratic-primary-winner,46657.98,1,0.895,1,0.01,2026-08-04T00:00:00Z
+907101,Will Marsha Blackburn win the 2026 Tennessee Governor Republican primary election?,tennessee-governor-republican-primary-winner,57594.65,168,0.932,1,3.0,2026-08-06T00:00:00Z
+907101,Will Marsha Blackburn win the 2026 Tennessee Governor Republican primary election?,tennessee-governor-republican-primary-winner,57594.65,24,0.9165,1,0.0,2026-08-06T00:00:00Z
+907101,Will Marsha Blackburn win the 2026 Tennessee Governor Republican primary election?,tennessee-governor-republican-primary-winner,57594.65,1,0.958,1,0.0,2026-08-06T00:00:00Z
+907102,Will Monty Fritts win the 2026 Tennessee Governor Republican primary election?,tennessee-governor-republican-primary-winner,14152.43,168,0.005,0,3.0,2026-08-06T00:00:00Z
+907102,Will Monty Fritts win the 2026 Tennessee Governor Republican primary election?,tennessee-governor-republican-primary-winner,14152.43,24,0.009,0,0.0,2026-08-06T00:00:00Z
+907102,Will Monty Fritts win the 2026 Tennessee Governor Republican primary election?,tennessee-governor-republican-primary-winner,14152.43,1,0.004,0,0.0,2026-08-06T00:00:00Z
+907103,Will John Rose win the 2026 Tennessee Governor Republican primary election?,tennessee-governor-republican-primary-winner,37341.08,168,0.0575,0,3.0,2026-08-06T00:00:00Z
+907103,Will John Rose win the 2026 Tennessee Governor Republican primary election?,tennessee-governor-republican-primary-winner,37341.08,24,0.0805,0,0.0,2026-08-06T00:00:00Z
+907103,Will John Rose win the 2026 Tennessee Governor Republican primary election?,tennessee-governor-republican-primary-winner,37341.08,1,0.036,0,0.0,2026-08-06T00:00:00Z
+907121,Will Tim Cyr win the 2026 Tennessee Governor Democratic primary election?,tennessee-governor-democratic-primary-winner,15644.64,168,0.0005,0,3.0,2026-08-06T00:00:00Z
+907121,Will Tim Cyr win the 2026 Tennessee Governor Democratic primary election?,tennessee-governor-democratic-primary-winner,15644.64,24,0.0005,0,0.0,2026-08-06T00:00:00Z
+907121,Will Tim Cyr win the 2026 Tennessee Governor Democratic primary election?,tennessee-governor-democratic-primary-winner,15644.64,1,0.006,0,0.0,2026-08-06T00:00:00Z
+907122,Will Jerri Green win the 2026 Tennessee Governor Democratic primary election?,tennessee-governor-democratic-primary-winner,49585.47,168,0.948,1,3.0,2026-08-06T00:00:00Z
+907122,Will Jerri Green win the 2026 Tennessee Governor Democratic primary election?,tennessee-governor-democratic-primary-winner,49585.47,24,0.9805,1,0.0,2026-08-06T00:00:00Z
+907122,Will Jerri Green win the 2026 Tennessee Governor Democratic primary election?,tennessee-governor-democratic-primary-winner,49585.47,1,0.981,1,0.0,2026-08-06T00:00:00Z
+907124,Will Kevin Lee McCants win the 2026 Tennessee Governor Democratic primary election?,tennessee-governor-democratic-primary-winner,12873.34,168,0.0005,0,3.0,2026-08-06T00:00:00Z
+907124,Will Kevin Lee McCants win the 2026 Tennessee Governor Democratic primary election?,tennessee-governor-democratic-primary-winner,12873.34,24,0.001,0,0.0,2026-08-06T00:00:00Z
+907124,Will Kevin Lee McCants win the 2026 Tennessee Governor Democratic primary election?,tennessee-governor-democratic-primary-winner,12873.34,1,0.0005,0,0.0,2026-08-06T00:00:00Z
+907475,Will Charity Clark win the 2026 Vermont Governor Democratic primary election?,vermont-governor-democratic-primary-winner,57824.96,168,0.0015,0,0.0,2026-08-11T00:00:00Z
+907475,Will Charity Clark win the 2026 Vermont Governor Democratic primary election?,vermont-governor-democratic-primary-winner,57824.96,24,0.0005,0,0.01,2026-08-11T00:00:00Z
+907475,Will Charity Clark win the 2026 Vermont Governor Democratic primary election?,vermont-governor-democratic-primary-winner,57824.96,1,0.0005,0,0.0,2026-08-11T00:00:00Z
+907476,Will Mike Pieciak win the 2026 Vermont Governor Democratic primary election?,vermont-governor-democratic-primary-winner,16180.54,168,0.013,0,0.0,2026-08-11T00:00:00Z
+907476,Will Mike Pieciak win the 2026 Vermont Governor Democratic primary election?,vermont-governor-democratic-primary-winner,16180.54,24,0.0005,0,0.0,2026-08-11T00:00:00Z
+907476,Will Mike Pieciak win the 2026 Vermont Governor Democratic primary election?,vermont-governor-democratic-primary-winner,16180.54,1,0.0005,0,0.0,2026-08-11T00:00:00Z
+907477,Will Esther Charlestin win the 2026 Vermont Governor Democratic primary election?,vermont-governor-democratic-primary-winner,11469.46,168,0.003,0,0.0,2026-08-11T00:00:00Z
+907477,Will Esther Charlestin win the 2026 Vermont Governor Democratic primary election?,vermont-governor-democratic-primary-winner,11469.46,24,0.0005,0,0.01,2026-08-11T00:00:00Z
+907477,Will Esther Charlestin win the 2026 Vermont Governor Democratic primary election?,vermont-governor-democratic-primary-winner,11469.46,1,0.0005,0,0.0,2026-08-11T00:00:00Z
+907478,Will Aly Richards win the 2026 Vermont Governor Democratic primary election?,vermont-governor-democratic-primary-winner,22936.82,168,0.62,0,0.0,2026-08-11T00:00:00Z
+907478,Will Aly Richards win the 2026 Vermont Governor Democratic primary election?,vermont-governor-democratic-primary-winner,22936.82,24,0.685,0,0.01,2026-08-11T00:00:00Z
+907478,Will Aly Richards win the 2026 Vermont Governor Democratic primary election?,vermont-governor-democratic-primary-winner,22936.82,1,0.415,0,0.0,2026-08-11T00:00:00Z
+907479,Will Amanda Janoo win the 2026 Vermont Governor Democratic primary election?,vermont-governor-democratic-primary-winner,15282.25,168,0.37,1,0.0,2026-08-11T00:00:00Z
+907479,Will Amanda Janoo win the 2026 Vermont Governor Democratic primary election?,vermont-governor-democratic-primary-winner,15282.25,24,0.3005,1,0.01,2026-08-11T00:00:00Z
+907479,Will Amanda Janoo win the 2026 Vermont Governor Democratic primary election?,vermont-governor-democratic-primary-winner,15282.25,1,0.5725,1,0.0,2026-08-11T00:00:00Z
+907493,Will Phil Scott win the 2026 Vermont Governor Republican primary election?,vermont-governor-republican-primary-winner,14087.02,168,0.985,1,0.0,2026-08-11T00:00:00Z
+907493,Will Phil Scott win the 2026 Vermont Governor Republican primary election?,vermont-governor-republican-primary-winner,14087.02,24,0.9995,1,0.01,2026-08-11T00:00:00Z
+907493,Will Phil Scott win the 2026 Vermont Governor Republican primary election?,vermont-governor-republican-primary-winner,14087.02,1,0.9995,1,0.0,2026-08-11T00:00:00Z
+907511,Will Mandela Barnes win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,48661.36,168,0.0005,0,0.0,2026-08-11T00:00:00Z
+907511,Will Mandela Barnes win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,48661.36,24,0.0005,0,0.01,2026-08-11T00:00:00Z
+907511,Will Mandela Barnes win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,48661.36,1,0.0005,0,0.0,2026-08-11T00:00:00Z
+907512,Will David Crowley win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,1407522.86,168,0.033,1,0.0,2026-08-11T00:00:00Z
+907512,Will David Crowley win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,1407522.86,24,0.0455,1,0.0,2026-08-11T00:00:00Z
+907512,Will David Crowley win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,1407522.86,1,0.0465,1,0.0,2026-08-11T00:00:00Z
+907513,Will Francesca Hong win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,1835669.32,168,0.9645,0,0.0,2026-08-11T00:00:00Z
+907513,Will Francesca Hong win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,1835669.32,24,0.95,0,0.01,2026-08-11T00:00:00Z
+907513,Will Francesca Hong win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,1835669.32,1,0.956,0,0.0,2026-08-11T00:00:00Z
+907514,Will Missy Hughes win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,12261.13,168,0.0005,0,0.0,2026-08-11T00:00:00Z
+907514,Will Missy Hughes win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,12261.13,24,0.0005,0,0.0,2026-08-11T00:00:00Z
+907514,Will Missy Hughes win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,12261.13,1,0.0005,0,0.0,2026-08-11T00:00:00Z
+907516,Will Sara Rodriguez win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,53483.65,168,0.0015,0,0.0,2026-08-11T00:00:00Z
+907516,Will Sara Rodriguez win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,53483.65,24,0.0005,0,0.01,2026-08-11T00:00:00Z
+907516,Will Sara Rodriguez win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,53483.65,1,0.0005,0,0.0,2026-08-11T00:00:00Z
+907518,Will Kelda Roys win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,17710.64,168,0.0005,0,0.0,2026-08-11T00:00:00Z
+907518,Will Kelda Roys win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,17710.64,24,0.0025,0,0.01,2026-08-11T00:00:00Z
+907518,Will Kelda Roys win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,17710.64,1,0.0005,0,0.0,2026-08-11T00:00:00Z
+907520,Will Joel Brennan win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,16321.89,168,0.0015,0,0.0,2026-08-11T00:00:00Z
+907520,Will Joel Brennan win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,16321.89,24,0.0005,0,0.01,2026-08-11T00:00:00Z
+907520,Will Joel Brennan win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,16321.89,1,0.0005,0,0.0,2026-08-11T00:00:00Z
+907522,Will Chris Larson win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,14740.32,168,0.0005,0,0.0,2026-08-11T00:00:00Z
+907522,Will Chris Larson win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,14740.32,24,0.0005,0,0.01,2026-08-11T00:00:00Z
+907522,Will Chris Larson win the 2026 Wisconsin Governor Democratic primary election?,wisconsin-governor-democratic-primary-winner,14740.32,1,0.0005,0,0.0,2026-08-11T00:00:00Z
+907544,Will Jocelyn Benson win the 2026 Michigan Governor Democratic primary election?,michigan-governor-democratic-primary-winner,17572.08,24,0.9915,1,0.0,2026-08-04T00:00:00Z
+907544,Will Jocelyn Benson win the 2026 Michigan Governor Democratic primary election?,michigan-governor-democratic-primary-winner,17572.08,1,0.9975,1,0.01,2026-08-04T00:00:00Z
+907577,Will Tom Tiffany win the 2026 Wisconsin Governor Republican primary election?,wisconsin-governor-republican-primary-winner,16383.8,168,0.994,1,0.0,2026-08-11T00:00:00Z
+907577,Will Tom Tiffany win the 2026 Wisconsin Governor Republican primary election?,wisconsin-governor-republican-primary-winner,16383.8,24,0.995,1,0.0,2026-08-11T00:00:00Z
+907577,Will Tom Tiffany win the 2026 Wisconsin Governor Republican primary election?,wisconsin-governor-republican-primary-winner,16383.8,1,0.9995,1,0.0,2026-08-11T00:00:00Z
+907579,Will Sean Duffy win the 2026 Wisconsin Governor Republican primary election?,wisconsin-governor-republican-primary-winner,37785.12,168,0.0015,0,0.0,2026-08-11T00:00:00Z
+907579,Will Sean Duffy win the 2026 Wisconsin Governor Republican primary election?,wisconsin-governor-republican-primary-winner,37785.12,24,0.001,0,0.01,2026-08-11T00:00:00Z
+907579,Will Sean Duffy win the 2026 Wisconsin Governor Republican primary election?,wisconsin-governor-republican-primary-winner,37785.12,1,0.001,0,0.0,2026-08-11T00:00:00Z
+907580,Will Eric Hovde win the 2026 Wisconsin Governor Republican primary election?,wisconsin-governor-republican-primary-winner,21778.77,168,0.0015,0,0.0,2026-08-11T00:00:00Z
+907580,Will Eric Hovde win the 2026 Wisconsin Governor Republican primary election?,wisconsin-governor-republican-primary-winner,21778.77,24,0.0025,0,0.0,2026-08-11T00:00:00Z
+907580,Will Eric Hovde win the 2026 Wisconsin Governor Republican primary election?,wisconsin-governor-republican-primary-winner,21778.77,1,0.0025,0,0.0,2026-08-11T00:00:00Z
+907599,Will Eric Barlow win the 2026 Wyoming Governor Republican primary election?,wyoming-governor-republican-primary-winner,214138.64,168,0.681,1,0.01,2026-08-18T00:00:00Z
+907599,Will Eric Barlow win the 2026 Wyoming Governor Republican primary election?,wyoming-governor-republican-primary-winner,214138.64,24,0.827,1,0.01,2026-08-18T00:00:00Z
+907599,Will Eric Barlow win the 2026 Wyoming Governor Republican primary election?,wyoming-governor-republican-primary-winner,214138.64,1,0.8075,1,0.01,2026-08-18T00:00:00Z
+907600,Will Brent Bien win the 2026 Wyoming Governor Republican primary election?,wyoming-governor-republican-primary-winner,39709.16,168,0.025,0,0.01,2026-08-18T00:00:00Z
+907600,Will Brent Bien win the 2026 Wyoming Governor Republican primary election?,wyoming-governor-republican-primary-winner,39709.16,24,0.018,0,0.01,2026-08-18T00:00:00Z
+907600,Will Brent Bien win the 2026 Wyoming Governor Republican primary election?,wyoming-governor-republican-primary-winner,39709.16,1,0.0345,0,0.0,2026-08-18T00:00:00Z
+907604,Will Megan Degenfelder win the 2026 Wyoming Governor Republican primary election?,wyoming-governor-republican-primary-winner,118618.74,168,0.295,0,0.01,2026-08-18T00:00:00Z
+907604,Will Megan Degenfelder win the 2026 Wyoming Governor Republican primary election?,wyoming-governor-republican-primary-winner,118618.74,24,0.1505,0,0.01,2026-08-18T00:00:00Z
+907604,Will Megan Degenfelder win the 2026 Wyoming Governor Republican primary election?,wyoming-governor-republican-primary-winner,118618.74,1,0.1695,0,0.0,2026-08-18T00:00:00Z
+907694,Will Josh Tenorio win the 2026 Guam Governor Democratic primary election?,guam-governor-democratic-primary-winner,22900.09,24,0.315,0,0.01,2026-08-01T00:00:00Z
+907694,Will Josh Tenorio win the 2026 Guam Governor Democratic primary election?,guam-governor-democratic-primary-winner,22900.09,1,0.295,0,0.0,2026-08-01T00:00:00Z
+907695,Will Therese Terlaje win the 2026 Guam Governor Democratic primary election?,guam-governor-democratic-primary-winner,19463.44,24,0.675,1,0.01,2026-08-01T00:00:00Z
+907695,Will Therese Terlaje win the 2026 Guam Governor Democratic primary election?,guam-governor-democratic-primary-winner,19463.44,1,0.7,1,0.0,2026-08-01T00:00:00Z
+907724,Will Vicente Ada win the 2026 Guam Governor Republican primary election?,guam-governor-republican-primary-winner-363,21296.94,24,0.655,1,0.01,2026-08-01T00:00:00Z
+907724,Will Vicente Ada win the 2026 Guam Governor Republican primary election?,guam-governor-republican-primary-winner-363,21296.94,1,0.665,1,0.0,2026-08-01T00:00:00Z
+907725,Will Frank F. Blas Jr. win the 2026 Guam Governor Republican primary election?,guam-governor-republican-primary-winner-363,12406.14,24,0.35,0,0.01,2026-08-01T00:00:00Z
+907725,Will Frank F. Blas Jr. win the 2026 Guam Governor Republican primary election?,guam-governor-republican-primary-winner-363,12406.14,1,0.305,0,0.0,2026-08-01T00:00:00Z
+907785,Will John James win the 2026 Michigan Governor Republican primary election?,michigan-governor-republican-primary-winner,168155.97,24,0.949,1,0.0,2026-08-04T00:00:00Z
+907785,Will John James win the 2026 Michigan Governor Republican primary election?,michigan-governor-republican-primary-winner,168155.97,1,0.9605,1,0.0,2026-08-04T00:00:00Z
+907794,Will Perry Johnson win the 2026 Michigan Governor Republican primary election?,michigan-governor-republican-primary-winner,96157.2,24,0.0505,0,0.0,2026-08-04T00:00:00Z
+907794,Will Perry Johnson win the 2026 Michigan Governor Republican primary election?,michigan-governor-republican-primary-winner,96157.2,1,0.0395,0,0.01,2026-08-04T00:00:00Z
+907983,Will Lisa Demuth win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,213945.64,168,0.22,1,0.0,2026-08-11T00:00:00Z
+907983,Will Lisa Demuth win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,213945.64,24,0.565,1,0.01,2026-08-11T00:00:00Z
+907983,Will Lisa Demuth win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,213945.64,1,0.63,1,0.0,2026-08-11T00:00:00Z
+907984,Will Scott Jensen win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,144416.97,168,0.0015,0,0.0,2026-08-11T00:00:00Z
+907984,Will Scott Jensen win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,144416.97,24,0.0005,0,0.01,2026-08-11T00:00:00Z
+907984,Will Scott Jensen win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,144416.97,1,0.0005,0,0.0,2026-08-11T00:00:00Z
+907986,Will Patrick Knight win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,13164.63,168,0.0005,0,0.0,2026-08-11T00:00:00Z
+907986,Will Patrick Knight win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,13164.63,24,0.0005,0,0.01,2026-08-11T00:00:00Z
+907986,Will Patrick Knight win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,13164.63,1,0.0005,0,0.0,2026-08-11T00:00:00Z
+907988,Will Chris Madel win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,10421.43,168,0.0005,0,0.0,2026-08-11T00:00:00Z
+907988,Will Chris Madel win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,10421.43,24,0.0005,0,0.0,2026-08-11T00:00:00Z
+907988,Will Chris Madel win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,10421.43,1,0.0005,0,0.0,2026-08-11T00:00:00Z
+907989,Will Phil Parrish win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,26981.89,168,0.0005,0,0.0,2026-08-11T00:00:00Z
+907989,Will Phil Parrish win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,26981.89,24,0.0005,0,0.01,2026-08-11T00:00:00Z
+907989,Will Phil Parrish win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,26981.89,1,0.0005,0,0.0,2026-08-11T00:00:00Z
+907990,Will Kendall Qualls win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,90793.06,168,0.03,0,0.0,2026-08-11T00:00:00Z
+907990,Will Kendall Qualls win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,90793.06,24,0.0185,0,0.01,2026-08-11T00:00:00Z
+907990,Will Kendall Qualls win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,90793.06,1,0.014,0,0.0,2026-08-11T00:00:00Z
+907991,Will Kristin Robbins win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,16632.79,168,0.0005,0,0.0,2026-08-11T00:00:00Z
+907991,Will Kristin Robbins win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,16632.79,24,0.0005,0,0.01,2026-08-11T00:00:00Z
+907991,Will Kristin Robbins win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,16632.79,1,0.0005,0,0.0,2026-08-11T00:00:00Z
+907993,Will Mike Lindell win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,330321.43,168,0.74,0,0.0,2026-08-11T00:00:00Z
+907993,Will Mike Lindell win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,330321.43,24,0.425,0,0.01,2026-08-11T00:00:00Z
+907993,Will Mike Lindell win the 2026 Minnesota Governor Republican primary election?,minnesota-governor-republican-primary-winner,330321.43,1,0.375,0,0.0,2026-08-11T00:00:00Z
+908035,Will Dave Bronson advance from the 2026 Alaska Governor primary election?,who-will-advance-from-the-alaska-governor-primary,20011.6,168,0.515,1,0.01,2026-08-18T00:00:00Z
+908035,Will Dave Bronson advance from the 2026 Alaska Governor primary election?,who-will-advance-from-the-alaska-governor-primary,20011.6,24,0.585,1,0.01,2026-08-18T00:00:00Z
+908035,Will Dave Bronson advance from the 2026 Alaska Governor primary election?,who-will-advance-from-the-alaska-governor-primary,20011.6,1,0.56,1,0.01,2026-08-18T00:00:00Z
+908044,Will Bernadette Wilson advance from the 2026 Alaska Governor primary election?,who-will-advance-from-the-alaska-governor-primary,20304.77,168,0.89,1,0.01,2026-08-18T00:00:00Z
+908044,Will Bernadette Wilson advance from the 2026 Alaska Governor primary election?,who-will-advance-from-the-alaska-governor-primary,20304.77,24,0.91,1,0.01,2026-08-18T00:00:00Z
+908044,Will Bernadette Wilson advance from the 2026 Alaska Governor primary election?,who-will-advance-from-the-alaska-governor-primary,20304.77,1,0.925,1,0.01,2026-08-18T00:00:00Z
+908045,Will Tom Begich advance from the 2026 Alaska Governor primary election?,who-will-advance-from-the-alaska-governor-primary,16852.13,168,0.978,1,0.01,2026-08-18T00:00:00Z
+908045,Will Tom Begich advance from the 2026 Alaska Governor primary election?,who-will-advance-from-the-alaska-governor-primary,16852.13,24,0.9965,1,0.0,2026-08-18T00:00:00Z
+908045,Will Tom Begich advance from the 2026 Alaska Governor primary election?,who-will-advance-from-the-alaska-governor-primary,16852.13,1,0.9915,1,0.0,2026-08-18T00:00:00Z
+943396,Will N’Kiyla “Jasmine” Thomas be the Democratic nominee for Senate in Oklahoma?,oklahoma-democratic-senate-primary-winner,88648.84,720,0.935,1,99.0,2026-08-25T00:00:00Z
+943396,Will N’Kiyla “Jasmine” Thomas be the Democratic nominee for Senate in Oklahoma?,oklahoma-democratic-senate-primary-winner,88648.84,168,0.953,1,0.01,2026-08-25T00:00:00Z
+943396,Will N’Kiyla “Jasmine” Thomas be the Democratic nominee for Senate in Oklahoma?,oklahoma-democratic-senate-primary-winner,88648.84,24,0.9385,1,0.01,2026-08-25T00:00:00Z
+943396,Will N’Kiyla “Jasmine” Thomas be the Democratic nominee for Senate in Oklahoma?,oklahoma-democratic-senate-primary-winner,88648.84,1,0.9125,1,0.0,2026-08-25T00:00:00Z
+943398,Will Jim Priest be the Democratic nominee for Senate in Oklahoma?,oklahoma-democratic-senate-primary-winner,29839.83,720,0.0345,0,99.0,2026-08-25T00:00:00Z
+943398,Will Jim Priest be the Democratic nominee for Senate in Oklahoma?,oklahoma-democratic-senate-primary-winner,29839.83,168,0.0405,0,0.01,2026-08-25T00:00:00Z
+943398,Will Jim Priest be the Democratic nominee for Senate in Oklahoma?,oklahoma-democratic-senate-primary-winner,29839.83,24,0.0635,0,0.0,2026-08-25T00:00:00Z
+943398,Will Jim Priest be the Democratic nominee for Senate in Oklahoma?,oklahoma-democratic-senate-primary-winner,29839.83,1,0.0855,0,0.0,2026-08-25T00:00:00Z
+959517,Will Robert Lulgjuraj be the Republican Nominee for MI-10?,mi-10-republican-primary-winner,10975.54,24,0.003,0,0.0,2026-08-04T00:00:00Z
+959517,Will Robert Lulgjuraj be the Republican Nominee for MI-10?,mi-10-republican-primary-winner,10975.54,1,0.0025,0,0.01,2026-08-04T00:00:00Z
+959546,Will Tyler Kistner be the Republican Nominee for MN-02?,mn-02-republican-primary-winner,18277.94,168,0.02,0,0.0,2026-08-11T00:00:00Z
+959546,Will Tyler Kistner be the Republican Nominee for MN-02?,mn-02-republican-primary-winner,18277.94,24,0.013,0,0.01,2026-08-11T00:00:00Z
+959546,Will Tyler Kistner be the Republican Nominee for MN-02?,mn-02-republican-primary-winner,18277.94,1,0.012,0,0.0,2026-08-11T00:00:00Z
+960319,Will Marie Gluesenkamp Perez advance to the general election for WA-03?,wa-03-primary-winners,18770.27,24,0.981,1,0.0,2026-08-04T00:00:00Z
+960319,Will Marie Gluesenkamp Perez advance to the general election for WA-03?,wa-03-primary-winners,18770.27,1,0.985,1,0.0,2026-08-04T00:00:00Z
+960320,Will Brent Hennrich advance to the general election for WA-03?,wa-03-primary-winners,24902.3,24,0.0295,0,0.0,2026-08-04T00:00:00Z
+960320,Will Brent Hennrich advance to the general election for WA-03?,wa-03-primary-winners,24902.3,1,0.0255,0,0.0,2026-08-04T00:00:00Z
+973114,Will Jared Moskowitz be the Democratic Nominee for FL-23?,fl-23-democratic-primary-winner,17100.45,168,0.0025,0,0.01,2026-08-18T00:00:00Z
+973114,Will Jared Moskowitz be the Democratic Nominee for FL-23?,fl-23-democratic-primary-winner,17100.45,24,0.0005,0,0.01,2026-08-18T00:00:00Z
+973114,Will Jared Moskowitz be the Democratic Nominee for FL-23?,fl-23-democratic-primary-winner,17100.45,1,0.0005,0,0.01,2026-08-18T00:00:00Z
+973115,Will Oliver Adams Larkin be the Democratic Nominee for FL-23?,fl-23-democratic-primary-winner,24980.63,168,0.003,0,0.01,2026-08-18T00:00:00Z
+973115,Will Oliver Adams Larkin be the Democratic Nominee for FL-23?,fl-23-democratic-primary-winner,24980.63,24,0.003,0,0.01,2026-08-18T00:00:00Z
+973115,Will Oliver Adams Larkin be the Democratic Nominee for FL-23?,fl-23-democratic-primary-winner,24980.63,1,0.001,0,0.0,2026-08-18T00:00:00Z
+973117,Will Lois Frankel be the Democratic Nominee for FL-23?,fl-23-democratic-primary-winner,22168.86,168,0.9575,1,0.01,2026-08-18T00:00:00Z
+973117,Will Lois Frankel be the Democratic Nominee for FL-23?,fl-23-democratic-primary-winner,22168.86,24,0.975,1,0.01,2026-08-18T00:00:00Z
+973117,Will Lois Frankel be the Democratic Nominee for FL-23?,fl-23-democratic-primary-winner,22168.86,1,0.9775,1,0.0,2026-08-18T00:00:00Z
+973277,Will Shri Thanedar be the Democratic Nominee for MI-13?,mi-13-democratic-primary-winner,832328.11,24,0.145,0,0.0,2026-08-04T00:00:00Z
+973277,Will Shri Thanedar be the Democratic Nominee for MI-13?,mi-13-democratic-primary-winner,832328.11,1,0.135,0,0.0,2026-08-04T00:00:00Z
+973278,Will Donavan McKinney be the Democratic Nominee for MI-13?,mi-13-democratic-primary-winner,953890.5,24,0.865,1,0.0,2026-08-04T00:00:00Z
+973278,Will Donavan McKinney be the Democratic Nominee for MI-13?,mi-13-democratic-primary-winner,953890.5,1,0.865,1,0.0,2026-08-04T00:00:00Z
+973624,Will Ilhan Omar be the Democratic Nominee for MN-05?,mn-05-democratic-primary-winner,31428.52,168,0.971,1,0.0,2026-08-11T00:00:00Z
+973624,Will Ilhan Omar be the Democratic Nominee for MN-05?,mn-05-democratic-primary-winner,31428.52,24,0.994,1,0.01,2026-08-11T00:00:00Z
+973624,Will Ilhan Omar be the Democratic Nominee for MN-05?,mn-05-democratic-primary-winner,31428.52,1,0.9945,1,0.0,2026-08-11T00:00:00Z
+1006908,Will Thomas Chalifoux be the Republican nominee for FL-09?,fl-09-republican-primary-winner,62915.11,168,0.255,0,0.01,2026-08-18T00:00:00Z
+1006908,Will Thomas Chalifoux be the Republican nominee for FL-09?,fl-09-republican-primary-winner,62915.11,24,0.197,0,0.01,2026-08-18T00:00:00Z
+1006908,Will Thomas Chalifoux be the Republican nominee for FL-09?,fl-09-republican-primary-winner,62915.11,1,0.169,0,0.01,2026-08-18T00:00:00Z
+1006910,Will Howard Steven Rance be the Republican nominee for FL-09?,fl-09-republican-primary-winner,10668.07,168,0.0015,0,0.01,2026-08-18T00:00:00Z
+1006910,Will Howard Steven Rance be the Republican nominee for FL-09?,fl-09-republican-primary-winner,10668.07,24,0.0015,0,0.01,2026-08-18T00:00:00Z
+1006910,Will Howard Steven Rance be the Republican nominee for FL-09?,fl-09-republican-primary-winner,10668.07,1,0.0015,0,0.01,2026-08-18T00:00:00Z
+1006911,Will Justin Story be the Republican nominee for FL-09?,fl-09-republican-primary-winner,12108.96,168,0.0025,0,0.01,2026-08-18T00:00:00Z
+1006911,Will Justin Story be the Republican nominee for FL-09?,fl-09-republican-primary-winner,12108.96,24,0.0015,0,0.01,2026-08-18T00:00:00Z
+1006911,Will Justin Story be the Republican nominee for FL-09?,fl-09-republican-primary-winner,12108.96,1,0.0015,0,0.01,2026-08-18T00:00:00Z
+1006912,Will Ben Butler be the Republican nominee for FL-09?,fl-09-republican-primary-winner,43845.26,168,0.497,0,0.01,2026-08-18T00:00:00Z
+1006912,Will Ben Butler be the Republican nominee for FL-09?,fl-09-republican-primary-winner,43845.26,24,0.3115,0,0.0,2026-08-18T00:00:00Z
+1006912,Will Ben Butler be the Republican nominee for FL-09?,fl-09-republican-primary-winner,43845.26,1,0.3105,0,0.0,2026-08-18T00:00:00Z
+1006913,Will Dan Green be the Republican nominee for FL-09?,fl-09-republican-primary-winner,31519.52,168,0.17,1,0.01,2026-08-18T00:00:00Z
+1006913,Will Dan Green be the Republican nominee for FL-09?,fl-09-republican-primary-winner,31519.52,24,0.285,1,0.01,2026-08-18T00:00:00Z
+1006913,Will Dan Green be the Republican nominee for FL-09?,fl-09-republican-primary-winner,31519.52,1,0.285,1,0.01,2026-08-18T00:00:00Z
+1006914,Will Jorge Martinez be the Republican nominee for FL-09?,fl-09-republican-primary-winner,20664.72,168,0.105,0,0.01,2026-08-18T00:00:00Z
+1006914,Will Jorge Martinez be the Republican nominee for FL-09?,fl-09-republican-primary-winner,20664.72,24,0.2315,0,0.0,2026-08-18T00:00:00Z
+1006914,Will Jorge Martinez be the Republican nominee for FL-09?,fl-09-republican-primary-winner,20664.72,1,0.2375,0,0.0,2026-08-18T00:00:00Z
+1113978,Will Amy Klobuchar win the 2026 Minnesota Governor Democratic primary election?,minnesota-governor-democratic-primary-winner,19560.69,168,0.993,1,0.0,2026-08-11T00:00:00Z
+1113978,Will Amy Klobuchar win the 2026 Minnesota Governor Democratic primary election?,minnesota-governor-democratic-primary-winner,19560.69,24,0.9985,1,0.01,2026-08-11T00:00:00Z
+1113978,Will Amy Klobuchar win the 2026 Minnesota Governor Democratic primary election?,minnesota-governor-democratic-primary-winner,19560.69,1,0.9985,1,0.0,2026-08-11T00:00:00Z
+1356219,Will New England Revolution win on 2026-03-07?,mls-ner-hou-2026-03-07,65579.54,168,0.39,0,0.5,2026-08-08T20:30:00Z
+1356219,Will New England Revolution win on 2026-03-07?,mls-ner-hou-2026-03-07,65579.54,24,0.395,0,0.5,2026-08-08T20:30:00Z
+1356219,Will New England Revolution win on 2026-03-07?,mls-ner-hou-2026-03-07,65579.54,1,0.385,0,0.5,2026-08-08T20:30:00Z
+1356220,Will New England Revolution vs. Houston Dynamo end in a draw?,mls-ner-hou-2026-03-07,58353.87,168,0.26,0,0.5,2026-08-08T20:30:00Z
+1356220,Will New England Revolution vs. Houston Dynamo end in a draw?,mls-ner-hou-2026-03-07,58353.87,24,0.275,0,0.5,2026-08-08T20:30:00Z
+1356220,Will New England Revolution vs. Houston Dynamo end in a draw?,mls-ner-hou-2026-03-07,58353.87,1,0.265,0,0.5,2026-08-08T20:30:00Z
+1356224,Will Houston Dynamo win on 2026-03-07?,mls-ner-hou-2026-03-07,60445.46,168,0.33,1,0.5,2026-08-08T20:30:00Z
+1356224,Will Houston Dynamo win on 2026-03-07?,mls-ner-hou-2026-03-07,60445.46,24,0.325,1,0.5,2026-08-08T20:30:00Z
+1356224,Will Houston Dynamo win on 2026-03-07?,mls-ner-hou-2026-03-07,60445.46,1,0.345,1,0.5,2026-08-08T20:30:00Z
+1356536,New England Revolution vs. Houston Dynamo: O/U 2.5,mls-ner-hou-2026-03-07-more-markets,39857.38,168,0.515,0,0.5,2026-08-08T20:30:00Z
+1356536,New England Revolution vs. Houston Dynamo: O/U 2.5,mls-ner-hou-2026-03-07-more-markets,39857.38,24,0.545,0,0.5,2026-08-08T20:30:00Z
+1356536,New England Revolution vs. Houston Dynamo: O/U 2.5,mls-ner-hou-2026-03-07-more-markets,39857.38,1,0.575,0,0.5,2026-08-08T20:30:00Z
+1356537,New England Revolution vs. Houston Dynamo: O/U 3.5,mls-ner-hou-2026-03-07-more-markets,32925.17,168,0.33,0,0.5,2026-08-08T20:30:00Z
+1356537,New England Revolution vs. Houston Dynamo: O/U 3.5,mls-ner-hou-2026-03-07-more-markets,32925.17,24,0.315,0,0.5,2026-08-08T20:30:00Z
+1356537,New England Revolution vs. Houston Dynamo: O/U 3.5,mls-ner-hou-2026-03-07-more-markets,32925.17,1,0.355,0,0.5,2026-08-08T20:30:00Z
+1356538,New England Revolution vs. Houston Dynamo: O/U 4.5,mls-ner-hou-2026-03-07-more-markets,12378.76,168,0.14,0,0.5,2026-08-08T20:30:00Z
+1356538,New England Revolution vs. Houston Dynamo: O/U 4.5,mls-ner-hou-2026-03-07-more-markets,12378.76,24,0.155,0,0.5,2026-08-08T20:30:00Z
+1356538,New England Revolution vs. Houston Dynamo: O/U 4.5,mls-ner-hou-2026-03-07-more-markets,12378.76,1,0.18,0,0.5,2026-08-08T20:30:00Z
+1421008,Will Eric Chung be the Democratic Nominee for MI-10?,mi-10-democratic-primary-winner-185,16604.49,24,0.08,0,0.0,2026-08-04T00:00:00Z
+1421008,Will Eric Chung be the Democratic Nominee for MI-10?,mi-10-democratic-primary-winner-185,16604.49,1,0.08,0,0.0,2026-08-04T00:00:00Z
+1421009,Will Tim Greimel be the Democratic Nominee for MI-10?,mi-10-democratic-primary-winner-185,35565.11,24,0.0105,0,0.0,2026-08-04T00:00:00Z
+1421009,Will Tim Greimel be the Democratic Nominee for MI-10?,mi-10-democratic-primary-winner-185,35565.11,1,0.0095,0,0.0,2026-08-04T00:00:00Z
+1421010,Will Christina Hines be the Democratic Nominee for MI-10?,mi-10-democratic-primary-winner-185,32499.87,24,0.915,1,0.0,2026-08-04T00:00:00Z
+1421010,Will Christina Hines be the Democratic Nominee for MI-10?,mi-10-democratic-primary-winner-185,32499.87,1,0.9,1,0.01,2026-08-04T00:00:00Z
+1447729,Will John Larson be the Democratic nominee for CT-01?,ct-01-democratic-primary-winner,34109.67,168,0.275,0,0.0,2026-08-11T00:00:00Z
+1447729,Will John Larson be the Democratic nominee for CT-01?,ct-01-democratic-primary-winner,34109.67,24,0.155,0,0.01,2026-08-11T00:00:00Z
+1447729,Will John Larson be the Democratic nominee for CT-01?,ct-01-democratic-primary-winner,34109.67,1,0.17,0,0.0,2026-08-11T00:00:00Z
+1447730,Will Luke Bronin be the Democratic nominee for CT-01?,ct-01-democratic-primary-winner,31192.95,168,0.735,1,0.0,2026-08-11T00:00:00Z
+1447730,Will Luke Bronin be the Democratic nominee for CT-01?,ct-01-democratic-primary-winner,31192.95,24,0.855,1,0.01,2026-08-11T00:00:00Z
+1447730,Will Luke Bronin be the Democratic nominee for CT-01?,ct-01-democratic-primary-winner,31192.95,1,0.82,1,0.0,2026-08-11T00:00:00Z
+1546000,Will Justin Pearson be the Democratic Nominee for TN-09?,tn-09-democratic-primary-winner,11154.54,168,0.9605,1,3.0,2026-08-06T00:00:00Z
+1546000,Will Justin Pearson be the Democratic Nominee for TN-09?,tn-09-democratic-primary-winner,11154.54,24,0.971,1,0.0,2026-08-06T00:00:00Z
+1546000,Will Justin Pearson be the Democratic Nominee for TN-09?,tn-09-democratic-primary-winner,11154.54,1,0.972,1,0.0,2026-08-06T00:00:00Z
+1718357,Haiti elections delayed again?,haiti-elections-delayed-again,24443.59,720,0.981,1,0.01,2026-08-30T00:00:00Z
+1829855,Will Jonathan Kreiss-Tomkins advance from the 2026 Alaska Governor primary election?,who-will-advance-from-the-alaska-governor-primary,19201.44,168,0.79,1,0.01,2026-08-18T00:00:00Z
+1829855,Will Jonathan Kreiss-Tomkins advance from the 2026 Alaska Governor primary election?,who-will-advance-from-the-alaska-governor-primary,19201.44,24,0.795,1,0.01,2026-08-18T00:00:00Z
+1829855,Will Jonathan Kreiss-Tomkins advance from the 2026 Alaska Governor primary election?,who-will-advance-from-the-alaska-governor-primary,19201.44,1,0.805,1,0.01,2026-08-18T00:00:00Z
+1898576,Will Marquita Bradshaw be the Democratic nominee for Senate in Tennessee?,tennessee-democratic-senate-primary-winner,26049.32,168,0.862,1,3.0,2026-08-06T00:00:00Z
+1898576,Will Marquita Bradshaw be the Democratic nominee for Senate in Tennessee?,tennessee-democratic-senate-primary-winner,26049.32,24,0.868,1,0.0,2026-08-06T00:00:00Z
+1898576,Will Marquita Bradshaw be the Democratic nominee for Senate in Tennessee?,tennessee-democratic-senate-primary-winner,26049.32,1,0.933,1,0.0,2026-08-06T00:00:00Z
+1973820,Will Alexandra Van Cleef be the Republican nominee for FL-06?,fl-06-republican-primary-winner,41190.92,168,0.0065,0,0.01,2026-08-18T00:00:00Z
+1973820,Will Alexandra Van Cleef be the Republican nominee for FL-06?,fl-06-republican-primary-winner,41190.92,24,0.0025,0,0.01,2026-08-18T00:00:00Z
+1973820,Will Alexandra Van Cleef be the Republican nominee for FL-06?,fl-06-republican-primary-winner,41190.92,1,0.0005,0,0.0,2026-08-18T00:00:00Z
+1973821,Will Joshua Vasquez be the Republican nominee for FL-06?,fl-06-republican-primary-winner,13606.91,168,0.0005,0,0.01,2026-08-18T00:00:00Z
+1973821,Will Joshua Vasquez be the Republican nominee for FL-06?,fl-06-republican-primary-winner,13606.91,24,0.0005,0,0.01,2026-08-18T00:00:00Z
+1973821,Will Joshua Vasquez be the Republican nominee for FL-06?,fl-06-republican-primary-winner,13606.91,1,0.0005,0,0.01,2026-08-18T00:00:00Z
+1973822,Will Aaron Baker be the Republican nominee for FL-06?,fl-06-republican-primary-winner,28867.23,168,0.01,0,0.01,2026-08-18T00:00:00Z
+1973822,Will Aaron Baker be the Republican nominee for FL-06?,fl-06-republican-primary-winner,28867.23,24,0.016,0,0.01,2026-08-18T00:00:00Z
+1973822,Will Aaron Baker be the Republican nominee for FL-06?,fl-06-republican-primary-winner,28867.23,1,0.0105,0,0.01,2026-08-18T00:00:00Z
+1973823,Will Dan Bilzerian be the Republican nominee for FL-06?,fl-06-republican-primary-winner,204780.44,168,0.007,0,0.01,2026-08-18T00:00:00Z
+1973823,Will Dan Bilzerian be the Republican nominee for FL-06?,fl-06-republican-primary-winner,204780.44,24,0.012,0,0.01,2026-08-18T00:00:00Z
+1973823,Will Dan Bilzerian be the Republican nominee for FL-06?,fl-06-republican-primary-winner,204780.44,1,0.008,0,0.01,2026-08-18T00:00:00Z
+1973824,Will Randy Fine be the Republican nominee for FL-06?,fl-06-republican-primary-winner,42459.34,168,0.9745,1,0.01,2026-08-18T00:00:00Z
+1973824,Will Randy Fine be the Republican nominee for FL-06?,fl-06-republican-primary-winner,42459.34,24,0.965,1,0.01,2026-08-18T00:00:00Z
+1973824,Will Randy Fine be the Republican nominee for FL-06?,fl-06-republican-primary-winner,42459.34,1,0.9845,1,0.0,2026-08-18T00:00:00Z
+1973825,Will Charles Gambaro be the Republican nominee for FL-06?,fl-06-republican-primary-winner,17668.92,168,0.0025,0,0.01,2026-08-18T00:00:00Z
+1973825,Will Charles Gambaro be the Republican nominee for FL-06?,fl-06-republican-primary-winner,17668.92,24,0.0005,0,0.01,2026-08-18T00:00:00Z
+1973825,Will Charles Gambaro be the Republican nominee for FL-06?,fl-06-republican-primary-winner,17668.92,1,0.0005,0,0.0,2026-08-18T00:00:00Z
+1973826,Will Ernest Audino be the Republican nominee for FL-06?,fl-06-republican-primary-winner,20147.98,168,0.0005,0,0.01,2026-08-18T00:00:00Z
+1973826,Will Ernest Audino be the Republican nominee for FL-06?,fl-06-republican-primary-winner,20147.98,24,0.0005,0,0.01,2026-08-18T00:00:00Z
+1973826,Will Ernest Audino be the Republican nominee for FL-06?,fl-06-republican-primary-winner,20147.98,1,0.0005,0,0.0,2026-08-18T00:00:00Z
+1993060,Will Aisha Wahab win the CA-14 special election?,ca-14-special-election-winner,111999.89,168,0.825,1,0.01,2026-08-18T00:00:00Z
+1993060,Will Aisha Wahab win the CA-14 special election?,ca-14-special-election-winner,111999.89,24,0.845,1,0.01,2026-08-18T00:00:00Z
+1993060,Will Aisha Wahab win the CA-14 special election?,ca-14-special-election-winner,111999.89,1,0.86,1,0.01,2026-08-18T00:00:00Z
+1993061,Will Melissa Hernandez win the CA-14 special election?,ca-14-special-election-winner,37655.07,168,0.1785,0,0.01,2026-08-18T00:00:00Z
+1993061,Will Melissa Hernandez win the CA-14 special election?,ca-14-special-election-winner,37655.07,24,0.1495,0,0.01,2026-08-18T00:00:00Z
+1993061,Will Melissa Hernandez win the CA-14 special election?,ca-14-special-election-winner,37655.07,1,0.125,0,0.01,2026-08-18T00:00:00Z
+1999469,Will the Workers' Party nominate Lula for President of Brazil by August 15?,will-the-workers-party-nominate-lula-for-president-of-brazil-by-august-15,199726.27,168,0.985,1,0.0,2026-08-15T06:00:00Z
+1999469,Will the Workers' Party nominate Lula for President of Brazil by August 15?,will-the-workers-party-nominate-lula-for-president-of-brazil-by-august-15,199726.27,24,0.993,1,0.01,2026-08-15T06:00:00Z
+1999469,Will the Workers' Party nominate Lula for President of Brazil by August 15?,will-the-workers-party-nominate-lula-for-president-of-brazil-by-august-15,199726.27,1,0.9995,1,0.0,2026-08-15T06:00:00Z
+2044055,Will Chris Stigall be the Republican nominee for MO-06?,mo-06-republican-primary-winner,16030.69,24,0.895,1,0.0,2026-08-04T00:00:00Z
+2044055,Will Chris Stigall be the Republican nominee for MO-06?,mo-06-republican-primary-winner,16030.69,1,0.92,1,0.0,2026-08-04T00:00:00Z
+2044833,Will Elijah Manley be the Democratic nominee for FL-20?,fl-20-democratic-primary-winner,40380.42,168,0.135,0,0.01,2026-08-18T00:00:00Z
+2044833,Will Elijah Manley be the Democratic nominee for FL-20?,fl-20-democratic-primary-winner,40380.42,24,0.085,0,0.0,2026-08-18T00:00:00Z
+2044833,Will Elijah Manley be the Democratic nominee for FL-20?,fl-20-democratic-primary-winner,40380.42,1,0.105,0,0.0,2026-08-18T00:00:00Z
+2044836,Will Debbie Wasserman Schultz be the Democratic nominee for FL-20?,fl-20-democratic-primary-winner,31657.29,168,0.875,1,0.01,2026-08-18T00:00:00Z
+2044836,Will Debbie Wasserman Schultz be the Democratic nominee for FL-20?,fl-20-democratic-primary-winner,31657.29,24,0.915,1,0.01,2026-08-18T00:00:00Z
+2044836,Will Debbie Wasserman Schultz be the Democratic nominee for FL-20?,fl-20-democratic-primary-winner,31657.29,1,0.905,1,0.01,2026-08-18T00:00:00Z
+2045066,Will Bridget Brink be the Democratic nominee for MI-07?,mi-07-democratic-primary-winner,36840.14,24,0.0495,0,0.0,2026-08-04T00:00:00Z
+2045066,Will Bridget Brink be the Democratic nominee for MI-07?,mi-07-democratic-primary-winner,36840.14,1,0.053,0,0.01,2026-08-04T00:00:00Z
+2045069,Will Matt Maasdam be the Democratic nominee for MI-07?,mi-07-democratic-primary-winner,28561.84,24,0.0315,0,0.0,2026-08-04T00:00:00Z
+2045069,Will Matt Maasdam be the Democratic nominee for MI-07?,mi-07-democratic-primary-winner,28561.84,1,0.015,0,0.0,2026-08-04T00:00:00Z
+2045071,Will William Lawrence be the Democratic nominee for MI-07?,mi-07-democratic-primary-winner,84681.01,24,0.925,1,0.0,2026-08-04T00:00:00Z
+2045071,Will William Lawrence be the Democratic nominee for MI-07?,mi-07-democratic-primary-winner,84681.01,1,0.925,1,0.01,2026-08-04T00:00:00Z
+2110241,Netanyahu drops out of Israel election by July 31?,netanyahu-drops-out-of-israel-election-by-july-31,108753.19,24,0.0005,0,0.02,2026-08-01T03:59:00Z
+2110241,Netanyahu drops out of Israel election by July 31?,netanyahu-drops-out-of-israel-election-by-july-31,108753.19,1,0.0005,0,0.02,2026-08-01T03:59:00Z
+2118268,Will the Bank of Brazil increase the target for the Selic rate by 50+ bps at the August meeting?,bank-of-brazil-decision-in-august,20533.16,24,0.0005,0,0.0,2026-08-04T00:00:00Z
+2118268,Will the Bank of Brazil increase the target for the Selic rate by 50+ bps at the August meeting?,bank-of-brazil-decision-in-august,20533.16,1,0.0005,0,0.0,2026-08-04T00:00:00Z
+2118269,Will the Bank of Brazil increase the target for the Selic rate by 25 bps at the August meeting?,bank-of-brazil-decision-in-august,22649.96,24,0.0005,0,0.0,2026-08-04T00:00:00Z
+2118269,Will the Bank of Brazil increase the target for the Selic rate by 25 bps at the August meeting?,bank-of-brazil-decision-in-august,22649.96,1,0.0005,0,0.0,2026-08-04T00:00:00Z
+2118270,Will the Bank of Brazil make no change to the target for the Selic rate at the August meeting?,bank-of-brazil-decision-in-august,66591.31,24,0.022,0,0.0,2026-08-04T00:00:00Z
+2118270,Will the Bank of Brazil make no change to the target for the Selic rate at the August meeting?,bank-of-brazil-decision-in-august,66591.31,1,0.0165,0,0.01,2026-08-04T00:00:00Z
+2118271,Will the Bank of Brazil decrease the target for the Selic rate by 25 bps at the August meeting?,bank-of-brazil-decision-in-august,98531.48,24,0.9805,1,0.0,2026-08-04T00:00:00Z
+2118271,Will the Bank of Brazil decrease the target for the Selic rate by 25 bps at the August meeting?,bank-of-brazil-decision-in-august,98531.48,1,0.983,1,0.0,2026-08-04T00:00:00Z
+2118272,Will the Bank of Brazil decrease the target for the Selic rate by 50+ bps at the August meeting?,bank-of-brazil-decision-in-august,36950.29,24,0.0045,0,0.0,2026-08-04T00:00:00Z
+2118272,Will the Bank of Brazil decrease the target for the Selic rate by 50+ bps at the August meeting?,bank-of-brazil-decision-in-august,36950.29,1,0.0025,0,0.01,2026-08-04T00:00:00Z
+2127670,Will Gabriel Magalhães be named to the 2026 PFA Premier League Team of the Year?,epl-2026-team-of-the-season,10257.08,168,0.9,1,0.01,2026-08-21T00:00:00Z
+2127670,Will Gabriel Magalhães be named to the 2026 PFA Premier League Team of the Year?,epl-2026-team-of-the-season,10257.08,24,0.929,1,0.01,2026-08-21T00:00:00Z
+2127670,Will Gabriel Magalhães be named to the 2026 PFA Premier League Team of the Year?,epl-2026-team-of-the-season,10257.08,1,0.8925,1,0.01,2026-08-21T00:00:00Z
+2127676,Will Declan Rice be named to the 2026 PFA Premier League Team of the Year?,epl-2026-team-of-the-season,10667.26,168,0.925,1,0.01,2026-08-21T00:00:00Z
+2127676,Will Declan Rice be named to the 2026 PFA Premier League Team of the Year?,epl-2026-team-of-the-season,10667.26,24,0.9865,1,0.01,2026-08-21T00:00:00Z
+2127676,Will Declan Rice be named to the 2026 PFA Premier League Team of the Year?,epl-2026-team-of-the-season,10667.26,1,0.9865,1,0.01,2026-08-21T00:00:00Z
+2127677,Will Bruno Fernandes be named to the 2026 PFA Premier League Team of the Year?,epl-2026-team-of-the-season,11020.3,168,0.921,1,0.01,2026-08-21T00:00:00Z
+2127677,Will Bruno Fernandes be named to the 2026 PFA Premier League Team of the Year?,epl-2026-team-of-the-season,11020.3,24,0.9755,1,0.01,2026-08-21T00:00:00Z
+2127677,Will Bruno Fernandes be named to the 2026 PFA Premier League Team of the Year?,epl-2026-team-of-the-season,11020.3,1,0.976,1,0.0,2026-08-21T00:00:00Z
+2127683,Will Erling Haaland be named to the 2026 PFA Premier League Team of the Year?,epl-2026-team-of-the-season,13080.57,168,0.93,1,0.0,2026-08-21T00:00:00Z
+2127683,Will Erling Haaland be named to the 2026 PFA Premier League Team of the Year?,epl-2026-team-of-the-season,13080.57,24,0.92,1,0.01,2026-08-21T00:00:00Z
+2127683,Will Erling Haaland be named to the 2026 PFA Premier League Team of the Year?,epl-2026-team-of-the-season,13080.57,1,0.915,1,0.0,2026-08-21T00:00:00Z
+2127686,Will João Pedro be named to the 2026 PFA Premier League Team of the Year?,epl-2026-team-of-the-season,15327.1,168,0.095,0,0.01,2026-08-21T00:00:00Z
+2127686,Will João Pedro be named to the 2026 PFA Premier League Team of the Year?,epl-2026-team-of-the-season,15327.1,24,0.12,0,0.01,2026-08-21T00:00:00Z
+2127686,Will João Pedro be named to the 2026 PFA Premier League Team of the Year?,epl-2026-team-of-the-season,15327.1,1,0.12,0,0.0,2026-08-21T00:00:00Z
+2158806,Romanian parliament dissolved by July 31?,romanian-parliament-dissolved-by-july-31,111581.76,24,0.0015,0,0.02,2026-08-01T03:59:00Z
+2158806,Romanian parliament dissolved by July 31?,romanian-parliament-dissolved-by-july-31,111581.76,1,0.0015,0,0.02,2026-08-01T03:59:00Z
+2233783,Bank of Mexico decreases interest rates by 25 bps after August 2026 meeting?,bank-of-mexico-decision-in-august,11644.39,168,0.0475,0,3.0,2026-08-06T00:00:00Z
+2233783,Bank of Mexico decreases interest rates by 25 bps after August 2026 meeting?,bank-of-mexico-decision-in-august,11644.39,24,0.013,0,0.0,2026-08-06T00:00:00Z
+2233783,Bank of Mexico decreases interest rates by 25 bps after August 2026 meeting?,bank-of-mexico-decision-in-august,11644.39,1,0.0115,0,0.0,2026-08-06T00:00:00Z
+2233784,No change in Bank of Mexico’s interest rates after August 2026 meeting?,bank-of-mexico-decision-in-august,75912.88,168,0.9375,1,3.0,2026-08-06T00:00:00Z
+2233784,No change in Bank of Mexico’s interest rates after August 2026 meeting?,bank-of-mexico-decision-in-august,75912.88,24,0.9855,1,0.0,2026-08-06T00:00:00Z
+2233784,No change in Bank of Mexico’s interest rates after August 2026 meeting?,bank-of-mexico-decision-in-august,75912.88,1,0.987,1,0.0,2026-08-06T00:00:00Z
+2233785,Bank of Mexico increases interest rates by 25 bps after August 2026 meeting?,bank-of-mexico-decision-in-august,13754.2,168,0.0055,0,3.0,2026-08-06T00:00:00Z
+2233785,Bank of Mexico increases interest rates by 25 bps after August 2026 meeting?,bank-of-mexico-decision-in-august,13754.2,24,0.0015,0,0.0,2026-08-06T00:00:00Z
+2233785,Bank of Mexico increases interest rates by 25 bps after August 2026 meeting?,bank-of-mexico-decision-in-august,13754.2,1,0.001,0,0.0,2026-08-06T00:00:00Z
+2234098,No change in Reserve Bank of Australia's interest rates at the August 2026 meeting?,reserve-bank-of-australia-decision-in-august,63892.57,168,0.991,1,0.0,2026-08-11T00:00:00Z
+2234098,No change in Reserve Bank of Australia's interest rates at the August 2026 meeting?,reserve-bank-of-australia-decision-in-august,63892.57,24,0.9965,1,0.0,2026-08-11T00:00:00Z
+2234098,No change in Reserve Bank of Australia's interest rates at the August 2026 meeting?,reserve-bank-of-australia-decision-in-august,63892.57,1,0.994,1,0.0,2026-08-11T00:00:00Z
+2234099,Reserve Bank of Australia increases interest rates by 25 bps at the August 2026 meeting?,reserve-bank-of-australia-decision-in-august,43418.64,168,0.0055,0,0.0,2026-08-11T00:00:00Z
+2234099,Reserve Bank of Australia increases interest rates by 25 bps at the August 2026 meeting?,reserve-bank-of-australia-decision-in-august,43418.64,24,0.005,0,0.0,2026-08-11T00:00:00Z
+2234099,Reserve Bank of Australia increases interest rates by 25 bps at the August 2026 meeting?,reserve-bank-of-australia-decision-in-august,43418.64,1,0.005,0,0.0,2026-08-11T00:00:00Z
+2264063,Will UK GDP growth in Q2 2026 be between 0.2% and 0.3%?,uk-gdp-growth-in-q2-2026-qoq,14932.69,168,0.435,0,0.0,2026-08-12T00:00:00Z
+2264063,Will UK GDP growth in Q2 2026 be between 0.2% and 0.3%?,uk-gdp-growth-in-q2-2026-qoq,14932.69,24,0.485,0,0.01,2026-08-12T00:00:00Z
+2264063,Will UK GDP growth in Q2 2026 be between 0.2% and 0.3%?,uk-gdp-growth-in-q2-2026-qoq,14932.69,1,0.33,0,0.0,2026-08-12T00:00:00Z
+2292417,St. Louis Cardinals vs. Cincinnati Reds,mlb-stl-cin-2026-05-24,1321610.46,720,0.425,1,105.34,2026-08-24T17:40:00Z
+2292417,St. Louis Cardinals vs. Cincinnati Reds,mlb-stl-cin-2026-05-24,1321610.46,168,0.715,1,0.34,2026-08-24T17:40:00Z
+2292418,Will there be a run scored in the first inning?: St. Louis Cardinals vs. Cincinnati Reds,mlb-stl-cin-2026-05-24,12121.43,720,0.465,1,105.34,2026-08-24T17:40:00Z
+2292418,Will there be a run scored in the first inning?: St. Louis Cardinals vs. Cincinnati Reds,mlb-stl-cin-2026-05-24,12121.43,168,0.9945,1,0.34,2026-08-24T17:40:00Z
+2296216,"Will Elon Musk tweet ""Hyperliquid"" by July 31, 2026?",will-elon-musk-tweet-about-hyperliquid-by,14292.25,24,0.01,0,0.0,2026-08-01T04:00:00Z
+2296216,"Will Elon Musk tweet ""Hyperliquid"" by July 31, 2026?",will-elon-musk-tweet-about-hyperliquid-by,14292.25,1,0.0105,0,0.0,2026-08-01T04:00:00Z
+2321903,Will Japan Q2 GDP growth (annualized) be between -0.8% and 0.0%?,japan-gdp-growth-in-q2-2026-qoq-annualized,13318.07,168,0.06,0,0.01,2026-08-17T00:00:00Z
+2321903,Will Japan Q2 GDP growth (annualized) be between -0.8% and 0.0%?,japan-gdp-growth-in-q2-2026-qoq-annualized,13318.07,24,0.0105,0,0.01,2026-08-17T00:00:00Z
+2321903,Will Japan Q2 GDP growth (annualized) be between -0.8% and 0.0%?,japan-gdp-growth-in-q2-2026-qoq-annualized,13318.07,1,0.018,0,0.0,2026-08-17T00:00:00Z
+2321904,Will Japan Q2 GDP growth (annualized) be between 0.0% and 0.8%?,japan-gdp-growth-in-q2-2026-qoq-annualized,42137.21,168,0.345,0,0.0,2026-08-17T00:00:00Z
+2321904,Will Japan Q2 GDP growth (annualized) be between 0.0% and 0.8%?,japan-gdp-growth-in-q2-2026-qoq-annualized,42137.21,24,0.065,0,0.0,2026-08-17T00:00:00Z
+2321904,Will Japan Q2 GDP growth (annualized) be between 0.0% and 0.8%?,japan-gdp-growth-in-q2-2026-qoq-annualized,42137.21,1,0.044,0,0.0,2026-08-17T00:00:00Z
+2321905,Will Japan Q2 GDP growth (annualized) be between 0.8% and 1.6%?,japan-gdp-growth-in-q2-2026-qoq-annualized,22323.5,168,0.37,1,0.0,2026-08-17T00:00:00Z
+2321905,Will Japan Q2 GDP growth (annualized) be between 0.8% and 1.6%?,japan-gdp-growth-in-q2-2026-qoq-annualized,22323.5,24,0.115,1,0.0,2026-08-17T00:00:00Z
+2321905,Will Japan Q2 GDP growth (annualized) be between 0.8% and 1.6%?,japan-gdp-growth-in-q2-2026-qoq-annualized,22323.5,1,0.0245,1,0.0,2026-08-17T00:00:00Z
+2333782,"Israel withdraws from Lebanon by July 31, 2026?",israel-withdraws-from-lebanon-by,2153125.2,24,0.001,0,0.02,2026-08-01T03:59:00Z
+2333782,"Israel withdraws from Lebanon by July 31, 2026?",israel-withdraws-from-lebanon-by,2153125.2,1,0.0005,0,0.02,2026-08-01T03:59:00Z
+2340756,Spread: St. Louis Cardinals (-1.5),mlb-stl-cin-2026-05-24,169926.41,168,0.295,0,0.34,2026-08-17T17:40:00Z
+2340756,Spread: St. Louis Cardinals (-1.5),mlb-stl-cin-2026-05-24,169926.41,24,0.375,0,0.34,2026-08-17T17:40:00Z
+2340756,Spread: St. Louis Cardinals (-1.5),mlb-stl-cin-2026-05-24,169926.41,1,0.405,0,0.34,2026-08-17T17:40:00Z
+2340757,St. Louis Cardinals vs. Cincinnati Reds: O/U 9.5,mlb-stl-cin-2026-05-24,368542.9,168,0.53,0,0.34,2026-08-17T17:40:00Z
+2340757,St. Louis Cardinals vs. Cincinnati Reds: O/U 9.5,mlb-stl-cin-2026-05-24,368542.9,24,0.575,0,0.34,2026-08-17T17:40:00Z
+2340757,St. Louis Cardinals vs. Cincinnati Reds: O/U 9.5,mlb-stl-cin-2026-05-24,368542.9,1,0.485,0,0.34,2026-08-17T17:40:00Z
+2341056,St. Louis Cardinals vs. Cincinnati Reds: O/U 10.5,mlb-stl-cin-2026-05-24,10467.54,168,0.425,0,0.34,2026-08-17T17:40:00Z
+2341056,St. Louis Cardinals vs. Cincinnati Reds: O/U 10.5,mlb-stl-cin-2026-05-24,10467.54,24,0.425,0,0.34,2026-08-17T17:40:00Z
+2341056,St. Louis Cardinals vs. Cincinnati Reds: O/U 10.5,mlb-stl-cin-2026-05-24,10467.54,1,0.405,0,0.34,2026-08-17T17:40:00Z
+2341061,St. Louis Cardinals vs. Cincinnati Reds: O/U 8.5,mlb-stl-cin-2026-05-24,12735.16,168,0.49,0,0.34,2026-08-17T17:40:00Z
+2341061,St. Louis Cardinals vs. Cincinnati Reds: O/U 8.5,mlb-stl-cin-2026-05-24,12735.16,24,0.585,0,0.34,2026-08-17T17:40:00Z
+2341061,St. Louis Cardinals vs. Cincinnati Reds: O/U 8.5,mlb-stl-cin-2026-05-24,12735.16,1,0.585,0,0.34,2026-08-17T17:40:00Z
+2343596,Will Elon Musk post 0-19 tweets in July 2026?,elon-musk-of-tweets-july-2026,52905.24,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343596,Will Elon Musk post 0-19 tweets in July 2026?,elon-musk-of-tweets-july-2026,52905.24,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343632,Will Elon Musk post 260-279 tweets in July 2026?,elon-musk-of-tweets-july-2026,18590.31,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343632,Will Elon Musk post 260-279 tweets in July 2026?,elon-musk-of-tweets-july-2026,18590.31,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343637,Will Elon Musk post 280-299 tweets in July 2026?,elon-musk-of-tweets-july-2026,20521.32,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343637,Will Elon Musk post 280-299 tweets in July 2026?,elon-musk-of-tweets-july-2026,20521.32,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343640,Will Elon Musk post 300-319 tweets in July 2026?,elon-musk-of-tweets-july-2026,20426.32,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343640,Will Elon Musk post 300-319 tweets in July 2026?,elon-musk-of-tweets-july-2026,20426.32,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343643,Will Elon Musk post 320-339 tweets in July 2026?,elon-musk-of-tweets-july-2026,11335.11,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343643,Will Elon Musk post 320-339 tweets in July 2026?,elon-musk-of-tweets-july-2026,11335.11,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343646,Will Elon Musk post 340-359 tweets in July 2026?,elon-musk-of-tweets-july-2026,11330.79,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343646,Will Elon Musk post 340-359 tweets in July 2026?,elon-musk-of-tweets-july-2026,11330.79,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343649,Will Elon Musk post 360-379 tweets in July 2026?,elon-musk-of-tweets-july-2026,17234.48,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343649,Will Elon Musk post 360-379 tweets in July 2026?,elon-musk-of-tweets-july-2026,17234.48,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343653,Will Elon Musk post 380-399 tweets in July 2026?,elon-musk-of-tweets-july-2026,18145.27,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343653,Will Elon Musk post 380-399 tweets in July 2026?,elon-musk-of-tweets-july-2026,18145.27,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343657,Will Elon Musk post 400-419 tweets in July 2026?,elon-musk-of-tweets-july-2026,11375.04,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343657,Will Elon Musk post 400-419 tweets in July 2026?,elon-musk-of-tweets-july-2026,11375.04,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343662,Will Elon Musk post 420-439 tweets in July 2026?,elon-musk-of-tweets-july-2026,11367.9,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343662,Will Elon Musk post 420-439 tweets in July 2026?,elon-musk-of-tweets-july-2026,11367.9,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343665,Will Elon Musk post 440-459 tweets in July 2026?,elon-musk-of-tweets-july-2026,17867.19,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343665,Will Elon Musk post 440-459 tweets in July 2026?,elon-musk-of-tweets-july-2026,17867.19,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343668,Will Elon Musk post 460-479 tweets in July 2026?,elon-musk-of-tweets-july-2026,22171.45,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343668,Will Elon Musk post 460-479 tweets in July 2026?,elon-musk-of-tweets-july-2026,22171.45,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343671,Will Elon Musk post 480-499 tweets in July 2026?,elon-musk-of-tweets-july-2026,27999.06,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343671,Will Elon Musk post 480-499 tweets in July 2026?,elon-musk-of-tweets-july-2026,27999.06,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343672,Will Elon Musk post 500-519 tweets in July 2026?,elon-musk-of-tweets-july-2026,20502.18,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343672,Will Elon Musk post 500-519 tweets in July 2026?,elon-musk-of-tweets-july-2026,20502.18,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343675,Will Elon Musk post 520-539 tweets in July 2026?,elon-musk-of-tweets-july-2026,12965.35,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343675,Will Elon Musk post 520-539 tweets in July 2026?,elon-musk-of-tweets-july-2026,12965.35,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343678,Will Elon Musk post 540-559 tweets in July 2026?,elon-musk-of-tweets-july-2026,18254.14,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343678,Will Elon Musk post 540-559 tweets in July 2026?,elon-musk-of-tweets-july-2026,18254.14,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343680,Will Elon Musk post 560-579 tweets in July 2026?,elon-musk-of-tweets-july-2026,17357.98,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343680,Will Elon Musk post 560-579 tweets in July 2026?,elon-musk-of-tweets-july-2026,17357.98,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343683,Will Elon Musk post 580-599 tweets in July 2026?,elon-musk-of-tweets-july-2026,30719.86,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343683,Will Elon Musk post 580-599 tweets in July 2026?,elon-musk-of-tweets-july-2026,30719.86,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343687,Will Elon Musk post 600-639 tweets in July 2026?,elon-musk-of-tweets-july-2026,29216.48,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343687,Will Elon Musk post 600-639 tweets in July 2026?,elon-musk-of-tweets-july-2026,29216.48,1,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343689,Will Elon Musk post 640-679 tweets in July 2026?,elon-musk-of-tweets-july-2026,37199.55,24,0.0005,0,0.0,2026-08-01T04:00:00Z
+2343689,Will Elon Musk post 640-679 tweets in July 2026?,elon-musk-of-tweets-july-2026,37199.55,1,0.0005,0,0.0,2026-08-01T04:00:00Z

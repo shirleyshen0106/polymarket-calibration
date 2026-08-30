@@ -1,0 +1,53 @@
+
+SELECTION: 202 markets kept, median volume $29,840, range $10,118 to $6,462,255
+  90 of 300 eligible markets were dropped for lack of served history; they sit
+  outside the ~30-day window, which is a function of closing date, not of size.
+
+SKIPPING 30 days horizon: only 5 observations, below the 30-point floor for saying anything.
+
+==============================================================================
+RELIABILITY -- quote taken 7 days before resolution   (n = 128)
+==============================================================================
+     quoted band     n  mean quote  realised           95% CI   verdict
+           0%-5%    55       0.8%      1.8% [ 0.3%,  9.6%]   n ok but only 1 of the rarer outcome -- no verdict
+          5%-15%    11      10.2%      9.1% [ 1.6%, 37.7%]   too few to judge (n<30)
+         15%-35%    11      26.9%     27.3% [ 9.7%, 56.6%]   too few to judge (n<30)
+         35%-65%    13      45.5%     30.8% [12.7%, 57.6%]   too few to judge (n<30)
+         65%-85%     7      75.0%     85.7% [48.7%, 97.4%]   too few to judge (n<30)
+         85%-95%    12      90.9%     91.7% [64.6%, 98.5%]   too few to judge (n<30)
+        95%-100%    19      97.9%     94.7% [75.4%, 99.1%]   too few to judge (n<30)
+
+  Brier 0.0828   (reliability 0.0031, resolution 0.1509, uncertainty 0.2256)
+  Base rate 34.4%.  Always predicting the base rate scores 0.2256, so the market beats it by 0.1428.
+
+==============================================================================
+RELIABILITY -- quote taken 1 day before resolution   (n = 198)
+==============================================================================
+     quoted band     n  mean quote  realised           95% CI   verdict
+           0%-5%   104       0.5%      1.0% [ 0.2%,  5.2%]   n ok but only 1 of the rarer outcome -- no verdict
+          5%-15%    14       9.7%     14.3% [ 4.0%, 39.9%]   too few to judge (n<30)
+         15%-35%    16      25.6%     25.0% [10.2%, 49.5%]   too few to judge (n<30)
+         35%-65%    11      48.3%     18.2% [ 5.1%, 47.7%]   too few to judge (n<30)
+         65%-85%    10      73.6%     80.0% [49.0%, 94.3%]   too few to judge (n<30)
+         85%-95%    17      90.7%     94.1% [73.0%, 99.0%]   too few to judge (n<30)
+        95%-100%    26      98.5%     96.2% [81.1%, 99.3%]   too few to judge (n<30)
+
+  Brier 0.0592   (reliability 0.0056, resolution 0.1524, uncertainty 0.2071)
+  Base rate 29.3%.  Always predicting the base rate scores 0.2071, so the market beats it by 0.1479.
+
+==============================================================================
+RELIABILITY -- quote taken 1 hour before resolution   (n = 198)
+==============================================================================
+     quoted band     n  mean quote  realised           95% CI   verdict
+           0%-5%   107       0.5%      1.9% [ 0.5%,  6.6%]   n ok but only 2 of the rarer outcome -- no verdict
+          5%-15%    12       9.0%     16.7% [ 4.7%, 44.8%]   too few to judge (n<30)
+         15%-35%    15      26.4%     13.3% [ 3.7%, 37.9%]   too few to judge (n<30)
+         35%-65%    12      47.9%     25.0% [ 8.9%, 53.2%]   too few to judge (n<30)
+         65%-85%     8      73.9%    100.0% [67.6%,100.0%]   too few to judge (n<30)
+         85%-95%    16      90.8%     87.5% [64.0%, 96.5%]   too few to judge (n<30)
+        95%-100%    28      98.5%     96.4% [82.3%, 99.4%]   too few to judge (n<30)
+
+  Brier 0.0560   (reliability 0.0078, resolution 0.1550, uncertainty 0.2071)
+  Base rate 29.3%.  Always predicting the base rate scores 0.2071, so the market beats it by 0.1511.
+
+wrote reliability.png
