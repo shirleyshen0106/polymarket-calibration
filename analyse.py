@@ -25,16 +25,17 @@ KNOWN LIMITATIONS, stated because they bound the conclusion
 -----------------------------------------------------------
 1. ~30-day rolling window. The CLOB serves price history only for recently closed
    markets, so this is one month of resolutions, not a historical archive.
-2. Survivorship in the sample. 90 of 300 eligible markets were dropped because no
-   history was served; check_selection() compares the kept and dropped groups so the
-   bias is measured rather than assumed.
+2. Survivorship in the sample. Roughly one eligible market in seven is dropped because
+   no history was served (295 of 2100 in the 7 Sep 2026 harvest); check_selection()
+   reports the live figures from harvest_stats.json rather than hard-coding them, which
+   is how the stale "90 of 300" from the truncated first sweep survived as long as it did.
 3. Observations are NOT independent. Several markets often belong to one event
    ("who will be X") and are mutually exclusive, so effective sample size is below
    the row count and the intervals below are optimistic.
 4. Prices are mid-quotes, not executable. Spread and fees are not modelled, so an
    apparent edge here is not a tradable edge.
 """
-import csv, math, sys
+import csv, json, math, sys
 from collections import defaultdict
 
 MIN_N = 30
@@ -146,8 +147,16 @@ def check_selection(kept_path="markets.csv"):
     med = vols[len(vols) // 2]
     print(f"\nSELECTION: {len(kept)} markets kept, median volume ${med:,.0f}, "
           f"range ${vols[0]:,.0f} to ${vols[-1]:,.0f}")
-    print("  90 of 300 eligible markets were dropped for lack of served history; they sit")
-    print("  outside the ~30-day window, which is a function of closing date, not of size.")
+    try:
+        s = json.load(open("harvest_stats.json"))
+    except Exception:
+        print("  (no harvest_stats.json; survivorship figures unavailable for this run)")
+        return
+    print(f"  Most recent harvest ({s['harvest_date'][:10]}, {s['days']}-day window): "
+          f"{s['eligible']} eligible, {s['kept']} kept, "
+          f"{s['dropped_nohistory']} dropped for lack of served history and "
+          f"{s['dropped_unresolved']} for not settling to a clean binary.")
+    print("  The history drop is a function of closing date, not of size.")
 
 
 def main():

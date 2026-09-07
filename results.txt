@@ -1,53 +1,66 @@
 
-SELECTION: 202 markets kept, median volume $29,840, range $10,118 to $6,462,255
-  90 of 300 eligible markets were dropped for lack of served history; they sit
-  outside the ~30-day window, which is a function of closing date, not of size.
-
-SKIPPING 30 days horizon: only 5 observations, below the 30-point floor for saying anything.
+SELECTION: 1874 markets kept, median volume $31,206, range $10,005 to $7,192,395
+  Most recent harvest (2026-09-07, 30-day window): 2100 eligible, 1789 kept, 295 dropped for lack of served history and 16 for not settling to a clean binary.
+  The history drop is a function of closing date, not of size.
 
 ==============================================================================
-RELIABILITY -- quote taken 7 days before resolution   (n = 128)
+RELIABILITY -- quote taken 30 days before resolution   (n = 466)
 ==============================================================================
      quoted band     n  mean quote  realised           95% CI   verdict
-           0%-5%    55       0.8%      1.8% [ 0.3%,  9.6%]   n ok but only 1 of the rarer outcome -- no verdict
-          5%-15%    11      10.2%      9.1% [ 1.6%, 37.7%]   too few to judge (n<30)
-         15%-35%    11      26.9%     27.3% [ 9.7%, 56.6%]   too few to judge (n<30)
-         35%-65%    13      45.5%     30.8% [12.7%, 57.6%]   too few to judge (n<30)
-         65%-85%     7      75.0%     85.7% [48.7%, 97.4%]   too few to judge (n<30)
-         85%-95%    12      90.9%     91.7% [64.6%, 98.5%]   too few to judge (n<30)
-        95%-100%    19      97.9%     94.7% [75.4%, 99.1%]   too few to judge (n<30)
+           0%-5%   212       1.2%      0.5% [ 0.1%,  2.6%]   n ok but only 1 of the rarer outcome -- no verdict
+          5%-15%    60       8.4%      5.0% [ 1.7%, 13.7%]   n ok but only 3 of the rarer outcome -- no verdict
+         15%-35%    71      22.9%     25.4% [16.7%, 36.6%]   consistent with the quote
+         35%-65%    60      47.8%     63.3% [50.7%, 74.4%]   market UNDERPRICED this band
+         65%-85%    30      76.1%     70.0% [52.1%, 83.3%]   consistent with the quote
+         85%-95%    17      90.1%     94.1% [73.0%, 99.0%]   too few to judge (n<30)
+        95%-100%    16      98.1%     93.8% [71.7%, 98.9%]   too few to judge (n<30)
 
-  Brier 0.0828   (reliability 0.0031, resolution 0.1509, uncertainty 0.2256)
-  Base rate 34.4%.  Always predicting the base rate scores 0.2256, so the market beats it by 0.1428.
-
-==============================================================================
-RELIABILITY -- quote taken 1 day before resolution   (n = 198)
-==============================================================================
-     quoted band     n  mean quote  realised           95% CI   verdict
-           0%-5%   104       0.5%      1.0% [ 0.2%,  5.2%]   n ok but only 1 of the rarer outcome -- no verdict
-          5%-15%    14       9.7%     14.3% [ 4.0%, 39.9%]   too few to judge (n<30)
-         15%-35%    16      25.6%     25.0% [10.2%, 49.5%]   too few to judge (n<30)
-         35%-65%    11      48.3%     18.2% [ 5.1%, 47.7%]   too few to judge (n<30)
-         65%-85%    10      73.6%     80.0% [49.0%, 94.3%]   too few to judge (n<30)
-         85%-95%    17      90.7%     94.1% [73.0%, 99.0%]   too few to judge (n<30)
-        95%-100%    26      98.5%     96.2% [81.1%, 99.3%]   too few to judge (n<30)
-
-  Brier 0.0592   (reliability 0.0056, resolution 0.1524, uncertainty 0.2071)
-  Base rate 29.3%.  Always predicting the base rate scores 0.2071, so the market beats it by 0.1479.
+  Brier 0.0874   (reliability 0.0037, resolution 0.0980, uncertainty 0.1826)
+  Base rate 24.0%.  Always predicting the base rate scores 0.1826, so the market beats it by 0.0951.
 
 ==============================================================================
-RELIABILITY -- quote taken 1 hour before resolution   (n = 198)
+RELIABILITY -- quote taken 7 days before resolution   (n = 843)
 ==============================================================================
      quoted band     n  mean quote  realised           95% CI   verdict
-           0%-5%   107       0.5%      1.9% [ 0.5%,  6.6%]   n ok but only 2 of the rarer outcome -- no verdict
-          5%-15%    12       9.0%     16.7% [ 4.7%, 44.8%]   too few to judge (n<30)
-         15%-35%    15      26.4%     13.3% [ 3.7%, 37.9%]   too few to judge (n<30)
-         35%-65%    12      47.9%     25.0% [ 8.9%, 53.2%]   too few to judge (n<30)
-         65%-85%     8      73.9%    100.0% [67.6%,100.0%]   too few to judge (n<30)
-         85%-95%    16      90.8%     87.5% [64.0%, 96.5%]   too few to judge (n<30)
-        95%-100%    28      98.5%     96.4% [82.3%, 99.4%]   too few to judge (n<30)
+           0%-5%   350       0.9%      0.3% [ 0.1%,  1.6%]   n ok but only 1 of the rarer outcome -- no verdict
+          5%-15%    81       9.8%     12.3% [ 6.8%, 21.3%]   consistent with the quote
+         15%-35%    78      26.1%     30.8% [21.6%, 41.7%]   consistent with the quote
+         35%-65%   202      48.3%     46.5% [39.8%, 53.4%]   consistent with the quote
+         65%-85%    36      75.6%     77.8% [61.9%, 88.3%]   consistent with the quote
+         85%-95%    44      90.8%     88.6% [76.0%, 95.0%]   consistent with the quote
+        95%-100%    52      97.7%     98.1% [89.9%, 99.7%]   n ok but only 1 of the rarer outcome -- no verdict
 
-  Brier 0.0560   (reliability 0.0078, resolution 0.1550, uncertainty 0.2071)
-  Base rate 29.3%.  Always predicting the base rate scores 0.2071, so the market beats it by 0.1511.
+  Brier 0.1059   (reliability 0.0004, resolution 0.1024, uncertainty 0.2072)
+  Base rate 29.3%.  Always predicting the base rate scores 0.2072, so the market beats it by 0.1013.
+
+==============================================================================
+RELIABILITY -- quote taken 1 day before resolution   (n = 1792)
+==============================================================================
+     quoted band     n  mean quote  realised           95% CI   verdict
+           0%-5%   491       0.7%      1.0% [ 0.4%,  2.4%]   consistent with the quote
+          5%-15%   151       9.4%     13.2% [ 8.7%, 19.6%]   consistent with the quote
+         15%-35%   369      24.7%     27.6% [23.3%, 32.4%]   consistent with the quote
+         35%-65%   457      49.1%     45.7% [41.2%, 50.3%]   consistent with the quote
+         65%-85%   154      75.2%     68.8% [61.1%, 75.6%]   consistent with the quote
+         85%-95%    70      90.6%     87.1% [77.3%, 93.1%]   consistent with the quote
+        95%-100%   100      98.0%     96.0% [90.2%, 98.4%]   n ok but only 4 of the rarer outcome -- no verdict
+
+  Brier 0.1423   (reliability 0.0010, resolution 0.0807, uncertainty 0.2225)
+  Base rate 33.4%.  Always predicting the base rate scores 0.2225, so the market beats it by 0.0803.
+
+==============================================================================
+RELIABILITY -- quote taken 1 hour before resolution   (n = 1655)
+==============================================================================
+     quoted band     n  mean quote  realised           95% CI   verdict
+           0%-5%   422       0.6%      0.9% [ 0.4%,  2.4%]   n ok but only 4 of the rarer outcome -- no verdict
+          5%-15%   135       9.5%     16.3% [11.0%, 23.4%]   market UNDERPRICED this band
+         15%-35%   352      24.8%     27.3% [22.9%, 32.2%]   consistent with the quote
+         35%-65%   431      49.5%     45.9% [41.3%, 50.7%]   consistent with the quote
+         65%-85%   143      74.5%     65.7% [57.6%, 73.0%]   market OVERPRICED this band
+         85%-95%    64      89.9%     79.7% [68.3%, 87.7%]   market OVERPRICED this band
+        95%-100%   108      98.2%     98.1% [93.5%, 99.5%]   n ok but only 2 of the rarer outcome -- no verdict
+
+  Brier 0.1474   (reliability 0.0019, resolution 0.0787, uncertainty 0.2260)
+  Base rate 34.5%.  Always predicting the base rate scores 0.2260, so the market beats it by 0.0786.
 
 wrote reliability.png

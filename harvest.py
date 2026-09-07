@@ -63,27 +63,58 @@ def iso(d):
 
 
 def fetch_markets(days, min_volume):
-    """Every closed market ending in the window, paginated. Gamma caps limit at 100."""
+    """Every closed market ending in the window, paginated. Gamma caps limit at 100.
+
+    TRUNCATION (found 7 Sep 2026, and it invalidated the first version of this study).
+    Gamma 500s intermittently on deep offsets. The original code treated ANY exception
+    here as "no more pages" and broke out of the loop, so a transient 500 at offset 300
+    silently ended the sweep and the harvest looked complete: it reported 300 eligible
+    markets for a window that actually held 2100. The whole "no band is testable in one
+    month" conclusion rested on that truncation.
+
+    A short read is now never assumed to be the end. When a page fails after the retries
+    inside get(), probe further offsets; only consecutive failures across a span of
+    offsets are treated as the true end, and any gap is recorded and reported loudly.
+    """
     now = dt.datetime.now(dt.timezone.utc)
     lo, hi = now - dt.timedelta(days=days), now
     out, offset = [], 0
-    while True:
+    gaps, probe_span = [], 5      # offsets to probe past a failure before believing it is the end
+    while offset <= 20000:
         url = (f"{GAMMA}?limit=100&offset={offset}&closed=true"
                f"&volume_num_min={int(min_volume)}"
                f"&end_date_min={iso(lo)}&end_date_max={iso(hi)}")
         try:
             page = get(url)
         except Exception as e:
-            # Gamma 500s on deep offsets rather than returning an empty page, so a
-            # failure here means "no more pages", not "the harvest is broken".
-            print(f"  pagination stopped at offset {offset}: {type(e).__name__}", file=sys.stderr)
-            break
+            # Do NOT assume this is the end. Probe ahead; a real end fails everywhere.
+            recovered = False
+            for step in range(1, probe_span + 1):
+                probe_off = offset + 100 * step
+                try:
+                    page = get(url.replace(f"offset={offset}", f"offset={probe_off}"))
+                except Exception:
+                    continue
+                if page:
+                    gaps.append(offset)
+                    print(f"  offset {offset} failed ({type(e).__name__}); recovered at "
+                          f"{probe_off} -- up to {100*step} markets missed here",
+                          file=sys.stderr)
+                    offset, recovered = probe_off, True
+                    break
+            if not recovered:
+                print(f"  pagination ended at offset {offset}: {type(e).__name__} and "
+                      f"{probe_span} probes past it also failed", file=sys.stderr)
+                break
         if not page:
             break
         out.extend(page)
         offset += 100
-        if len(page) < 100 or offset > 5000:
+        if len(page) < 100:
             break
+    if gaps:
+        print(f"  WARNING: sweep is INCOMPLETE -- {len(gaps)} unrecovered gap(s) at "
+              f"offsets {gaps}. Treat counts as a lower bound.", file=sys.stderr)
     return out
 
 
@@ -198,6 +229,13 @@ def main():
     with open(a.markets_out, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(mrows[0].keys()) if mrows else ["market_id"])
         w.writeheader(); w.writerows(mrows)
+
+    with open("harvest_stats.json", "w") as f:
+        json.dump({"harvest_date": iso(dt.datetime.now(dt.timezone.utc)),
+                   "days": a.days, "min_volume": a.min_volume,
+                   "eligible": len(markets), "kept": kept,
+                   "dropped_unresolved": dropped_unresolved,
+                   "dropped_nohistory": dropped_nohistory}, f, indent=2)
 
     print(f"\nkept {kept} markets | dropped {dropped_unresolved} (not a clean binary settlement) "
           f"| dropped {dropped_nohistory} (no history served -- outside the ~30-day window)")
