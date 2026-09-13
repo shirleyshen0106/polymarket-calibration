@@ -62,25 +62,19 @@ def iso(d):
     return d.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
-def fetch_markets(days, min_volume):
-    """Every closed market ending in the window, paginated. Gamma caps limit at 100.
+MAX_OFFSET = 2000      # Gamma 422s at offset >= 2100, so 2000 is the last servable page start
 
-    TRUNCATION (found 7 Sep 2026, and it invalidated the first version of this study).
-    Gamma 500s intermittently on deep offsets. The original code treated ANY exception
-    here as "no more pages" and broke out of the loop, so a transient 500 at offset 300
-    silently ended the sweep and the harvest looked complete: it reported 300 eligible
-    markets for a window that actually held 2100. The whole "no band is testable in one
-    month" conclusion rested on that truncation.
 
-    A short read is now never assumed to be the end. When a page fails after the retries
-    inside get(), probe further offsets; only consecutive failures across a span of
-    offsets are treated as the true end, and any gap is recorded and reported loudly.
+def _sweep(lo, hi, min_volume):
+    """Paginate one window. Returns (markets, hit_cap).
+
+    hit_cap is True when the sweep ran out of servable offsets rather than running out
+    of markets, which means the window holds MORE than was returned and must be split.
     """
-    now = dt.datetime.now(dt.timezone.utc)
-    lo, hi = now - dt.timedelta(days=days), now
-    out, offset = [], 0
-    gaps, probe_span = [], 5      # offsets to probe past a failure before believing it is the end
-    while offset <= 20000:
+    out, offset, gaps, probe_span = [], 0, [], 5
+    while True:
+        if offset > MAX_OFFSET:
+            return out, True                      # the cap, not the end of the data
         url = (f"{GAMMA}?limit=100&offset={offset}&closed=true"
                f"&volume_num_min={int(min_volume)}"
                f"&end_date_min={iso(lo)}&end_date_max={iso(hi)}")
@@ -91,6 +85,8 @@ def fetch_markets(days, min_volume):
             recovered = False
             for step in range(1, probe_span + 1):
                 probe_off = offset + 100 * step
+                if probe_off > MAX_OFFSET:
+                    break
                 try:
                     page = get(url.replace(f"offset={offset}", f"offset={probe_off}"))
                 except Exception:
@@ -103,19 +99,72 @@ def fetch_markets(days, min_volume):
                     offset, recovered = probe_off, True
                     break
             if not recovered:
-                print(f"  pagination ended at offset {offset}: {type(e).__name__} and "
-                      f"{probe_span} probes past it also failed", file=sys.stderr)
-                break
+                print(f"  WARNING: sweep of {iso(lo)}..{iso(hi)} ended at offset {offset}: "
+                      f"{type(e).__name__} and probes past it also failed. Counts are a "
+                      f"lower bound.", file=sys.stderr)
+                return out, False
         if not page:
-            break
+            return out, False                     # genuinely exhausted
         out.extend(page)
         offset += 100
         if len(page) < 100:
-            break
-    if gaps:
-        print(f"  WARNING: sweep is INCOMPLETE -- {len(gaps)} unrecovered gap(s) at "
-              f"offsets {gaps}. Treat counts as a lower bound.", file=sys.stderr)
-    return out
+            return out, False                     # genuinely exhausted
+
+
+def fetch_markets(days, min_volume):
+    """Every closed market ending in the window, by recursive date-slicing.
+
+    TRUNCATION, TWICE. This function has now silently under-read the window twice, by
+    two different mechanisms, and both times the short read looked exactly like a
+    complete one. The fix for the first is kept and the second is why this is no longer
+    a single paginated sweep.
+
+    (1) Found 7 Sep 2026. Gamma 500s intermittently at shallow offsets, and the original
+        code read ANY exception as "no more pages". A transient 500 at offset 300 ended
+        the sweep and reported 300 eligible markets for a window holding far more. A
+        failed page is now probed at further offsets before the end is believed.
+
+    (2) Found 12 Sep 2026, and it is the larger of the two. Gamma refuses offset >= 2100
+        outright (HTTP 422), so ANY window with more than 2,100 matches returns exactly
+        the first 2,100 and then errors. The probe logic above dutifully treated that
+        hard refusal as the end of the data. Worse, Gamma orders results by market id
+        ASCENDING, so the 2,100 returned are not a random sample: they are the
+        lowest-id, earliest-created markets in the window. Measured 12 Sep 2026, a
+        30-day window returned 2,100 while a single 24-hour slice of it returned 1,076,
+        and a complete 7-day harvest found 8,595, so the true 30-day window is well over
+        30,000 -- the sweep was seeing 6 to 7 per cent of it, chosen by creation order.
+
+    The window is therefore split recursively until every slice completes on its own
+    terms (a short page or an empty one) rather than against the offset cap. Slices are
+    deduplicated by market id, since a market on a boundary can appear in two slices.
+    """
+    now = dt.datetime.now(dt.timezone.utc)
+    lo, hi = now - dt.timedelta(days=days), now
+
+    markets, forced = {}, []
+    # Work through a stack of windows, splitting any that hit the cap.
+    stack = [(lo, hi)]
+    while stack:
+        w_lo, w_hi = stack.pop()
+        page, hit_cap = _sweep(w_lo, w_hi, min_volume)
+        span_s = (w_hi - w_lo).total_seconds()
+        if hit_cap and span_s > 900:              # 15 minutes is the floor on splitting
+            mid = w_lo + dt.timedelta(seconds=span_s / 2)
+            stack.extend([(w_lo, mid), (mid, w_hi)])
+            continue
+        if hit_cap:
+            forced.append((w_lo, w_hi))
+            print(f"  WARNING: {iso(w_lo)}..{iso(w_hi)} still exceeds the offset cap at "
+                  f"the {span_s/60:.0f}-minute floor; it is truncated.", file=sys.stderr)
+        for m in page:
+            markets[str(m.get("id"))] = m
+        print(f"  {iso(w_lo)[:16]}..{iso(w_hi)[:16]}  +{len(page):5d}  "
+              f"total {len(markets)}", file=sys.stderr)
+
+    if forced:
+        print(f"  WARNING: sweep is INCOMPLETE -- {len(forced)} slice(s) hit the cap at "
+              f"the splitting floor.", file=sys.stderr)
+    return list(markets.values())
 
 
 def settled_outcome(market):
@@ -176,7 +225,7 @@ def main():
     print(f"{len(markets)} closed markets in the last {a.days} days with volume >= {a.min_volume:,}")
 
     rows, mrows = [], []
-    kept = dropped_unresolved = dropped_nohistory = 0
+    kept = dropped_unresolved = dropped_nohistory = dropped_fetch_error = 0
 
     for i, m in enumerate(markets, 1):
         y = settled_outcome(m)
@@ -191,7 +240,21 @@ def main():
             continue
 
         time.sleep(0.25)   # be polite; the public API 500s under rapid fire
-        path = price_path(token, a.fidelity)
+        # A network drop (DNS failure, 13 Sep 2026) used to raise out of main() and lose
+        # the entire run, since nothing is written until the end. Wait it out a few
+        # times, then count the market as a fetch failure rather than dying.
+        path = None
+        for wait in (30, 60, 120, 240):
+            try:
+                path = price_path(token, a.fidelity)
+                break
+            except Exception as e:
+                print(f"  history fetch failed for {m.get('id')} ({type(e).__name__}); "
+                      f"retrying in {wait}s", file=sys.stderr)
+                time.sleep(wait)
+        if path is None:
+            dropped_fetch_error += 1
+            continue
         if not path:
             dropped_nohistory += 1
             continue
@@ -235,10 +298,12 @@ def main():
                    "days": a.days, "min_volume": a.min_volume,
                    "eligible": len(markets), "kept": kept,
                    "dropped_unresolved": dropped_unresolved,
-                   "dropped_nohistory": dropped_nohistory}, f, indent=2)
+                   "dropped_nohistory": dropped_nohistory,
+                   "dropped_fetch_error": dropped_fetch_error}, f, indent=2)
 
     print(f"\nkept {kept} markets | dropped {dropped_unresolved} (not a clean binary settlement) "
-          f"| dropped {dropped_nohistory} (no history served -- outside the ~30-day window)")
+          f"| dropped {dropped_nohistory} (no history served -- outside the ~30-day window) "
+          f"| dropped {dropped_fetch_error} (network failure after retries)")
     print(f"wrote {len(rows)} observations -> {a.out}")
     print(f"wrote {len(mrows)} markets      -> {a.markets_out}")
 
