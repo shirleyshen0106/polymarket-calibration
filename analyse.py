@@ -208,8 +208,13 @@ def plot(rows, results, fig_path="reliability.png"):
             judged = (t["verdict"] == "consistent with the quote"
                       or t["verdict"].startswith("market "))
             mispriced = t["verdict"].startswith("market ")
+            # A band that resolves 100% (or 0%) has a Wilson bound equal to the
+            # realised rate, and floating point can put it a hair the wrong side,
+            # which matplotlib rejects outright. Clamp for drawing only; the
+            # interval printed in the table is untouched.
             ax[0].errorbar(t["mean_quote"], t["realised"],
-                           yerr=[[t["realised"] - t["lo"]], [t["hi"] - t["realised"]]],
+                           yerr=[[max(0.0, t["realised"] - t["lo"])],
+                                 [max(0.0, t["hi"] - t["realised"])]],
                            color=c, alpha=0.5, capsize=2, lw=1, zorder=2)
             ax[0].scatter(t["mean_quote"], t["realised"], s=10 + 9 * t["n"] ** 0.5,
                           facecolor=(c if judged else "none"), edgecolor=c,
