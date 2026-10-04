@@ -1,7 +1,7 @@
 # Are Polymarket prices calibrated probabilities?
 
-A reliability study of resolved Polymarket markets. The headline sample is **three complete,
-tiled weeks of resolutions, 6 to 27 September 2026: 25,581 markets and 55,623 quote–outcome
+A reliability study of resolved Polymarket markets. The headline sample is **four complete,
+tiled weeks of resolutions, 6 September to 4 October 2026: 34,589 markets and 76,117 quote–outcome
 pairs**, at one hour, one day, seven days and thirty days before resolution.
 
 ![reliability diagram](reliability.png)
@@ -21,23 +21,25 @@ without retraining. This repository points the same discipline at market prices.
 per cent resolve Yes more often than quoted, and markets quoted at 65 to 95 per cent
 less often, at both one day and one hour before resolution; at one hour the 0 to 5 per cent band
 now joins them. The 35 to 65 per cent band,
-which holds most of the book, is consistent with its quotes.
+which holds most of the book, is consistent with its quotes at one hour, one day and seven
+days. With the fourth week the same shape is visible at seven days on both sides, and at
+thirty days on both sides, though more weakly there.
 
-This replaces two earlier headlines, both withdrawn below. It now rests on three complete,
-consecutive weeks, and the shape held across the second and third weeks without being
+This replaces two earlier headlines, both withdrawn below. It now rests on four complete,
+consecutive weeks, and the shape held across the second, third and fourth weeks without being
 softened away; two weeks was the minimum this study had set itself before calling the
 pattern persistent. It still comes with a caution that may yet kill it: noisy quotes produce
 exactly this shape on their own (see *What could explain it*).
 
 | Quote taken | n | Brier | reliability ↓ | resolution ↑ | uncertainty | beats base rate by |
 |---|---:|---:|---:|---:|---:|---:|
-| 30 days before | 909 | 0.1910 | 0.0044 | 0.0399 | 0.2261 | 0.0351 |
-| 7 days before | 10,700 | 0.2093 | 0.0008 | 0.0353 | 0.2473 | 0.0380 |
-| 1 day before | 21,809 | 0.2213 | 0.0016 | 0.0269 | 0.2480 | 0.0267 |
-| 1 hour before | 22,205 | 0.1886 | 0.0014 | 0.0600 | 0.2479 | 0.0593 |
+| 30 days before | 1,850 | 0.1740 | 0.0027 | 0.0469 | 0.2195 | 0.0455 |
+| 7 days before | 14,915 | 0.2061 | 0.0006 | 0.0371 | 0.2459 | 0.0398 |
+| 1 day before | 29,529 | 0.2174 | 0.0014 | 0.0304 | 0.2477 | 0.0303 |
+| 1 hour before | 29,823 | 0.1864 | 0.0015 | 0.0618 | 0.2476 | 0.0612 |
 
 **Do not read the Brier column across rows.** Different markets survive at different
-horizons (only 909 have a quote a full 30 days out, because the price-history window
+horizons (only 1,850 have a quote a full 30 days out, because the price-history window
 itself is about 30 days), so the rows are different samples. Compare reliability within
 a horizon, not Brier across horizons.
 
@@ -45,6 +47,62 @@ Resolution is much lower than in the earlier, truncated sample. That is composit
 not a worse market: the complete weeks are dominated by short-dated Bitcoin up/down,
 football and esports markets quoted near 50 per cent, which carry little information a
 day out by construction.
+
+## What the fourth week bought, 4 October 2026
+
+The fourth complete week (27 September to 4 October, an eight-day harvest tiled against the
+third with a one-day overlap deduplicated on market and horizon) added 9,008 markets and
+20,494 quote–outcome pairs. The harvest found 10,423 eligible markets in eight days, in line
+with the previous week's 10,078, so it was not truncated. The thirty-day horizon roughly
+doubled, from n = 909 to n = 1,850, and that is where nearly everything moved:
+
+```
+RELIABILITY -- quote taken 30 days before resolution   (n = 1850)
+     quoted band     n  mean quote  realised           95% CI   verdict
+           0%-5%   370       1.4%      2.2% [ 1.1%,  4.2%]   consistent with the quote
+          5%-15%   197       9.2%      8.6% [ 5.5%, 13.4%]   consistent with the quote
+         15%-35%   307      24.8%     30.9% [26.0%, 36.3%]   market UNDERPRICED this band
+         35%-65%   813      48.9%     45.1% [41.8%, 48.6%]   market OVERPRICED this band
+         65%-85%   104      73.5%     57.7% [48.1%, 66.7%]   market OVERPRICED this band
+         85%-95%    37      89.5%     91.9% [78.7%, 97.2%]   n ok but only 3 of the rarer outcome -- no verdict
+        95%-100%    22      97.0%     95.5% [78.2%, 99.2%]   too few to judge (n<30)
+```
+
+The Wilson verdicts assume independent markets. This week every band that moved was also
+re-checked with a cluster bootstrap that groups markets by their Polymarket event (one
+event, one draw) and resamples events. The gap is quote minus outcome, in points:
+
+| Horizon, band | n | events | gap | 95% cluster CI | survives? |
+|---|---:|---:|---:|---|---|
+| 30 days, 15–35% | 307 | 187 | −6.2 | [−12.1, −0.3] | yes, barely |
+| 30 days, 35–65% | 813 | 292 | +3.8 | [−1.2, +8.4] | **no** |
+| 30 days, 65–85% | 104 | 83 | +15.8 | [+4.8, +26.4] | yes |
+| 7 days, 65–85% | 1,303 | 1,137 | +2.7 | [+0.1, +5.4] | yes, barely |
+
+**The longshot side has now appeared at thirty days.** The 15 to 35 per cent band flipped
+from consistent to *underpriced* (24.8 per cent quoted, 30.9 realised). On 27 September this
+README said that at a month out the overshoot was visible on the favourite side only. That
+is no longer true, though the clustered interval only just excludes zero.
+
+**The favourite-side band flagged on 20 September held, and shrank.** The thirty-day 65 to 85
+per cent band is still overpriced at n = 104, but the gap fell from 26.6 points (n = 39) to
+15.8. That is what a real effect first measured on a small sample usually looks like: the
+direction survived, and the first estimate was too large.
+
+**The 35 to 65 per cent band at thirty days is flagged overpriced, and I do not report it.**
+The Wilson interval just clears the mean quote, but grouped by event the interval spans zero,
+and the thirty-day sample has a base rate of 32.5 per cent Yes, so a few large multi-market
+events resolving No can move it. It is the band that holds most of the book, and a claim
+that the market misprices it needs more than this.
+
+**The shape now reaches seven days on both sides.** The seven-day 65 to 85 per cent band
+flipped from consistent to *overpriced* (73.4 quoted, 70.7 realised, n = 1,303), joining
+the 5 to 15 and 15 to 35 bands, which were already underpriced there. The effect is a few
+points, as it is at one day.
+
+**Two bands moved the other way or became testable.** At one day the 95 to 100 per cent band
+went from overpriced back to *consistent* (98.1 quoted, 97.0 realised, n = 466). At thirty
+days the 0 to 5 per cent band cleared the rarer-outcome rule (8 Yes of 370) and is consistent.
 
 ## What the third week bought, 27 September 2026
 
@@ -204,31 +262,31 @@ kill was the point of the exercise.
 ## Where the market is miscalibrated
 
 ```
-RELIABILITY -- quote taken 1 day before resolution   (n = 21809)
+RELIABILITY -- quote taken 1 day before resolution   (n = 29529)
      quoted band     n  mean quote  realised           95% CI   verdict
-           0%-5%  1260       1.6%      4.0% [ 3.0%,  5.2%]   market UNDERPRICED this band
-          5%-15%  1217       9.6%     17.3% [15.3%, 19.6%]   market UNDERPRICED this band
-         15%-35%  2957      25.6%     34.0% [32.3%, 35.7%]   market UNDERPRICED this band
-         35%-65% 14365      49.9%     49.8% [48.9%, 50.6%]   consistent with the quote
-         65%-85%  1302      73.4%     68.6% [66.0%, 71.1%]   market OVERPRICED this band
-         85%-95%   370      90.1%     82.7% [78.5%, 86.2%]   market OVERPRICED this band
-        95%-100%   338      98.1%     96.4% [93.9%, 98.0%]   market OVERPRICED this band
+           0%-5%  2078       1.5%      2.9% [ 2.3%,  3.8%]   market UNDERPRICED this band
+          5%-15%  1651       9.6%     17.6% [15.9%, 19.5%]   market UNDERPRICED this band
+         15%-35%  3945      25.6%     33.8% [32.3%, 35.3%]   market UNDERPRICED this band
+         35%-65% 19093      49.9%     49.9% [49.2%, 50.6%]   consistent with the quote
+         65%-85%  1787      73.3%     69.6% [67.4%, 71.7%]   market OVERPRICED this band
+         85%-95%   509      90.2%     83.5% [80.0%, 86.5%]   market OVERPRICED this band
+        95%-100%   466      98.1%     97.0% [95.0%, 98.2%]   consistent with the quote
 ```
 
 ```
-RELIABILITY -- quote taken 1 hour before resolution   (n = 22205)
+RELIABILITY -- quote taken 1 hour before resolution   (n = 29823)
      quoted band     n  mean quote  realised           95% CI   verdict
-           0%-5%  2900       0.6%      1.1% [ 0.8%,  1.5%]   market UNDERPRICED this band
-          5%-15%  1024       9.7%     16.2% [14.1%, 18.6%]   market UNDERPRICED this band
-         15%-35%  2370      25.4%     33.7% [31.8%, 35.6%]   market UNDERPRICED this band
-         35%-65% 12685      49.9%     49.8% [49.0%, 50.7%]   consistent with the quote
-         65%-85%  1041      73.9%     64.4% [61.4%, 67.2%]   market OVERPRICED this band
-         85%-95%   388      90.3%     84.0% [80.0%, 87.3%]   market OVERPRICED this band
-        95%-100%  1797      99.5%     99.3% [98.8%, 99.6%]   consistent with the quote
+           0%-5%  4224       0.6%      0.9% [ 0.7%,  1.2%]   market UNDERPRICED this band
+          5%-15%  1375       9.7%     17.3% [15.4%, 19.4%]   market UNDERPRICED this band
+         15%-35%  3147      25.5%     33.8% [32.2%, 35.5%]   market UNDERPRICED this band
+         35%-65% 16771      49.9%     50.0% [49.3%, 50.8%]   consistent with the quote
+         65%-85%  1410      73.9%     65.0% [62.5%, 67.5%]   market OVERPRICED this band
+         85%-95%   492      90.3%     83.3% [79.8%, 86.4%]   market OVERPRICED this band
+        95%-100%  2404      99.5%     99.2% [98.8%, 99.5%]   consistent with the quote
 ```
 
 **By market family** (computed on the two-week sample of 20 September and not yet
-re-run on three weeks). About 5,800 of the 14,400 observations at the one-day horizon then were
+re-run on four weeks). About 5,800 of the 14,400 observations at the one-day horizon then were
 crypto price markets, nearly all quoted between 35 and 65 per cent. Excluding them
 leaves the shape intact, so it is not a Bitcoin artefact:
 
@@ -285,9 +343,11 @@ shape shrinks as the quote gets cleaner, it was noise.
    clearing the mean quote by 0.02 percentage points. But k = 2. The entire result
    rested on two markets resolving Yes. The rule refuses a verdict on any band with
    fewer than five of the rarer outcome, and on the current sample it still withholds a
-   verdict on the 0 to 5 band at thirty days (n = 142, k = 3) and the 95 to 100 band at
-   seven days. That band now has n = 110 and would look decisively well calibrated on n
-   alone; it has zero of the rarer outcome, so it gets no verdict.
+   verdict on the 85 to 95 band at thirty days (n = 37, k = 3) and the 95 to 100 band at
+   seven days. That band now has n = 170 and would look decisively well calibrated on n
+   alone; it has two of the rarer outcome, so it gets no verdict. (The 0 to 5 band at
+   thirty days, withheld here until 27 September at k = 3, cleared at k = 8 and reads
+   consistent.)
 
 ## The earlier, truncated series
 
@@ -302,18 +362,19 @@ the truncation. Its output is in `results_truncated_series.txt` and
 
 ## Limitations, stated because they bound the conclusion
 
-1. **Three weeks.** The headline rests on three complete, consecutive weeks of resolutions.
+1. **Four weeks.** The headline rests on four complete, consecutive weeks of resolutions.
    The second week was the minimum this study set for calling the shape persistent, and
-   the shape held through the third. Consecutive is not the same as independent, though: the weeks share
+   the shape held through the third and fourth. Consecutive is not the same as independent, though: the weeks share
    the same recurring market families and much of the same news flow, so this is weaker
    evidence than weeks drawn months apart would be.
 2. **Rolling ~30-day window.** The CLOB price-history endpoint serves history only for
    recently closed markets (measured 30 August 2026 on samples of eight: August 8/8,
    July 0/8, June 0/8). Data cannot be back-filled; a week not harvested is lost.
-3. **Survivorship is now small.** In the most recent harvest (eight days), of 10,078
-   eligible markets 58 were dropped for not settling to a clean binary, 1 for lack of
-   served history, and none to a network failure. The two weeks before, of 8,764 and
-   8,595 eligible, the figures were 31, 6, 1 and 39, 8, 1.
+3. **Survivorship is now small.** In the most recent harvest (eight days), of 10,423
+   eligible markets 54 were dropped for not settling to a clean binary, 46 for lack of
+   served history, and none to a network failure. The week before, of 10,078 eligible,
+   the figures were 58, 1 and 0; the two weeks before that, of 8,764 and 8,595, they were
+   31, 6, 1 and 39, 8, 1.
 4. **Observations are not independent.** Crypto up/down markets on the same underlying
    and hour move together, and sports markets on one fixture are mutually exclusive, so
    the effective sample is far smaller than the row count and every interval here is
@@ -334,7 +395,7 @@ python3 analyse.py --obs observations_complete.csv --markets markets_complete.cs
 ```
 
 Run weekly with `--days 7` so consecutive harvests tile the timeline (or `--days 8` for a
-one-day overlap, which the merge deduplicates; the 27 September harvest did this). Check the eligible
+one-day overlap, which the merge deduplicates; the 27 September and 4 October harvests did this). Check the eligible
 count against the previous week before merging: the harvest on 19 September ended at
 offset 1,000 on a transient network failure and returned 900 eligible against the
 previous week's 8,595. It said so in a `WARNING` line and its counts were a lower bound,

@@ -1,66 +1,66 @@
 
-SELECTION: 25581 markets kept, median volume $33,907, range $10,000 to $56,435,145
-  Most recent harvest (2026-09-27, 8-day window): 10078 eligible, 10019 kept, 1 dropped for lack of served history and 58 for not settling to a clean binary.
+SELECTION: 34589 markets kept, median volume $33,711, range $10,000 to $56,435,145
+  Most recent harvest (2026-10-04, 8-day window): 10423 eligible, 10323 kept, 46 dropped for lack of served history and 54 for not settling to a clean binary.
   The history drop is a function of closing date, not of size.
 
 ==============================================================================
-RELIABILITY -- quote taken 30 days before resolution   (n = 909)
+RELIABILITY -- quote taken 30 days before resolution   (n = 1850)
 ==============================================================================
      quoted band     n  mean quote  realised           95% CI   verdict
-           0%-5%   142       1.1%      2.1% [ 0.7%,  6.0%]   n ok but only 3 of the rarer outcome -- no verdict
-          5%-15%    74       9.8%     10.8% [ 5.6%, 19.9%]   consistent with the quote
-         15%-35%   146      25.4%     29.5% [22.7%, 37.3%]   consistent with the quote
-         35%-65%   475      48.7%     44.4% [40.0%, 48.9%]   consistent with the quote
-         65%-85%    39      72.7%     46.2% [31.6%, 61.4%]   market OVERPRICED this band
-         85%-95%    20      89.7%     95.0% [76.4%, 99.1%]   too few to judge (n<30)
-        95%-100%    13      96.8%     92.3% [66.7%, 98.6%]   too few to judge (n<30)
+           0%-5%   370       1.4%      2.2% [ 1.1%,  4.2%]   consistent with the quote
+          5%-15%   197       9.2%      8.6% [ 5.5%, 13.4%]   consistent with the quote
+         15%-35%   307      24.8%     30.9% [26.0%, 36.3%]   market UNDERPRICED this band
+         35%-65%   813      48.9%     45.1% [41.8%, 48.6%]   market OVERPRICED this band
+         65%-85%   104      73.5%     57.7% [48.1%, 66.7%]   market OVERPRICED this band
+         85%-95%    37      89.5%     91.9% [78.7%, 97.2%]   n ok but only 3 of the rarer outcome -- no verdict
+        95%-100%    22      97.0%     95.5% [78.2%, 99.2%]   too few to judge (n<30)
 
-  Brier 0.1910   (reliability 0.0044, resolution 0.0399, uncertainty 0.2261)
-  Base rate 34.5%.  Always predicting the base rate scores 0.2261, so the market beats it by 0.0351.
-
-==============================================================================
-RELIABILITY -- quote taken 7 days before resolution   (n = 10700)
-==============================================================================
-     quoted band     n  mean quote  realised           95% CI   verdict
-           0%-5%   419       1.9%      2.9% [ 1.6%,  4.9%]   consistent with the quote
-          5%-15%   795       9.4%     12.2% [10.1%, 14.7%]   market UNDERPRICED this band
-         15%-35%  2209      25.3%     31.1% [29.2%, 33.1%]   market UNDERPRICED this band
-         35%-65%  5869      49.3%     49.5% [48.2%, 50.8%]   consistent with the quote
-         65%-85%   993      73.4%     71.8% [68.9%, 74.5%]   consistent with the quote
-         85%-95%   305      90.0%     88.9% [84.8%, 91.9%]   consistent with the quote
-        95%-100%   110      97.7%    100.0% [96.6%,100.0%]   n ok but only 0 of the rarer outcome -- no verdict
-
-  Brier 0.2093   (reliability 0.0008, resolution 0.0353, uncertainty 0.2473)
-  Base rate 44.8%.  Always predicting the base rate scores 0.2473, so the market beats it by 0.0380.
+  Brier 0.1740   (reliability 0.0027, resolution 0.0469, uncertainty 0.2195)
+  Base rate 32.5%.  Always predicting the base rate scores 0.2195, so the market beats it by 0.0455.
 
 ==============================================================================
-RELIABILITY -- quote taken 1 day before resolution   (n = 21809)
+RELIABILITY -- quote taken 7 days before resolution   (n = 14915)
 ==============================================================================
      quoted band     n  mean quote  realised           95% CI   verdict
-           0%-5%  1260       1.6%      4.0% [ 3.0%,  5.2%]   market UNDERPRICED this band
-          5%-15%  1217       9.6%     17.3% [15.3%, 19.6%]   market UNDERPRICED this band
-         15%-35%  2957      25.6%     34.0% [32.3%, 35.7%]   market UNDERPRICED this band
-         35%-65% 14365      49.9%     49.8% [48.9%, 50.6%]   consistent with the quote
-         65%-85%  1302      73.4%     68.6% [66.0%, 71.1%]   market OVERPRICED this band
-         85%-95%   370      90.1%     82.7% [78.5%, 86.2%]   market OVERPRICED this band
-        95%-100%   338      98.1%     96.4% [93.9%, 98.0%]   market OVERPRICED this band
+           0%-5%   867       1.7%      2.1% [ 1.3%,  3.3%]   consistent with the quote
+          5%-15%  1045       9.4%     12.3% [10.5%, 14.5%]   market UNDERPRICED this band
+         15%-35%  2763      25.5%     30.4% [28.7%, 32.1%]   market UNDERPRICED this band
+         35%-65%  8347      49.3%     48.6% [47.6%, 49.7%]   consistent with the quote
+         65%-85%  1303      73.4%     70.7% [68.2%, 73.1%]   market OVERPRICED this band
+         85%-95%   420      89.9%     88.6% [85.2%, 91.3%]   consistent with the quote
+        95%-100%   170      97.8%     98.8% [95.8%, 99.7%]   n ok but only 2 of the rarer outcome -- no verdict
 
-  Brier 0.2213   (reliability 0.0016, resolution 0.0269, uncertainty 0.2480)
-  Base rate 45.6%.  Always predicting the base rate scores 0.2480, so the market beats it by 0.0267.
+  Brier 0.2061   (reliability 0.0006, resolution 0.0371, uncertainty 0.2459)
+  Base rate 43.6%.  Always predicting the base rate scores 0.2459, so the market beats it by 0.0398.
 
 ==============================================================================
-RELIABILITY -- quote taken 1 hour before resolution   (n = 22205)
+RELIABILITY -- quote taken 1 day before resolution   (n = 29529)
 ==============================================================================
      quoted band     n  mean quote  realised           95% CI   verdict
-           0%-5%  2900       0.6%      1.1% [ 0.8%,  1.5%]   market UNDERPRICED this band
-          5%-15%  1024       9.7%     16.2% [14.1%, 18.6%]   market UNDERPRICED this band
-         15%-35%  2370      25.4%     33.7% [31.8%, 35.6%]   market UNDERPRICED this band
-         35%-65% 12685      49.9%     49.8% [49.0%, 50.7%]   consistent with the quote
-         65%-85%  1041      73.9%     64.4% [61.4%, 67.2%]   market OVERPRICED this band
-         85%-95%   388      90.3%     84.0% [80.0%, 87.3%]   market OVERPRICED this band
-        95%-100%  1797      99.5%     99.3% [98.8%, 99.6%]   consistent with the quote
+           0%-5%  2078       1.5%      2.9% [ 2.3%,  3.8%]   market UNDERPRICED this band
+          5%-15%  1651       9.6%     17.6% [15.9%, 19.5%]   market UNDERPRICED this band
+         15%-35%  3945      25.6%     33.8% [32.3%, 35.3%]   market UNDERPRICED this band
+         35%-65% 19093      49.9%     49.9% [49.2%, 50.6%]   consistent with the quote
+         65%-85%  1787      73.3%     69.6% [67.4%, 71.7%]   market OVERPRICED this band
+         85%-95%   509      90.2%     83.5% [80.0%, 86.5%]   market OVERPRICED this band
+        95%-100%   466      98.1%     97.0% [95.0%, 98.2%]   consistent with the quote
 
-  Brier 0.1886   (reliability 0.0014, resolution 0.0600, uncertainty 0.2479)
-  Base rate 45.5%.  Always predicting the base rate scores 0.2479, so the market beats it by 0.0593.
+  Brier 0.2174   (reliability 0.0014, resolution 0.0304, uncertainty 0.2477)
+  Base rate 45.2%.  Always predicting the base rate scores 0.2477, so the market beats it by 0.0303.
+
+==============================================================================
+RELIABILITY -- quote taken 1 hour before resolution   (n = 29823)
+==============================================================================
+     quoted band     n  mean quote  realised           95% CI   verdict
+           0%-5%  4224       0.6%      0.9% [ 0.7%,  1.2%]   market UNDERPRICED this band
+          5%-15%  1375       9.7%     17.3% [15.4%, 19.4%]   market UNDERPRICED this band
+         15%-35%  3147      25.5%     33.8% [32.2%, 35.5%]   market UNDERPRICED this band
+         35%-65% 16771      49.9%     50.0% [49.3%, 50.8%]   consistent with the quote
+         65%-85%  1410      73.9%     65.0% [62.5%, 67.5%]   market OVERPRICED this band
+         85%-95%   492      90.3%     83.3% [79.8%, 86.4%]   market OVERPRICED this band
+        95%-100%  2404      99.5%     99.2% [98.8%, 99.5%]   consistent with the quote
+
+  Brier 0.1864   (reliability 0.0015, resolution 0.0618, uncertainty 0.2476)
+  Base rate 45.1%.  Always predicting the base rate scores 0.2476, so the market beats it by 0.0612.
 
 wrote reliability.png
