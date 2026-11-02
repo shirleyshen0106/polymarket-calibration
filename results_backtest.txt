@@ -1,0 +1,84 @@
+Cost-aware walk-forward test of the Polymarket mispricing
+Run 2026-10-08T16:47Z against observations_complete.csv at origin/main dd32e53 (34,589 markets / 76,117 observations)
+
+================================================================ horizon 168h, one leg per event
+DATA        /tmp/obs_current.csv
+            horizon 168h, 6698 resolutions, one leg per event
+            resolution dates 2026-09-06 to 2026-10-04
+COSTS       half-spread 0.0100 on entry, fee on winnings 0.00%
+WALK-FWD    fit on first 2679 resolutions, refit every 250; 3620 bets placed out of 4019 testable
+
+STRATEGY    total PnL -99.35 units over 3620 bets
+            PnL per bet -0.0274  [95% event-clustered bootstrap -0.0437, -0.0111]
+            hit rate 41.5%   per-bet Sharpe -0.055
+            max drawdown -111.32 units   turnover 3620 bets
+            distinct events 3620
+
+BENCHMARKS  on the same bets, same costs
+            always-YES                   +65.49 units  (+0.0181 per bet)
+            always-NO                    +385.37 units  (+0.1065 per bet)
+            no-edge (mid, no signal)     -68.42 units  (-0.0189 per bet)
+
+BY BAND
+            [0.00,0.05) YES  n=  199  PnL    -1.75  per bet -0.0088
+            [0.05,0.15) YES  n=  198  PnL    +6.96  per bet +0.0351
+            [0.15,0.35) YES  n=  594  PnL   +33.45  per bet +0.0563
+            [0.35,0.65) YES  n= 2335  PnL   +28.62  per bet +0.0123
+            [0.65,0.85) NO   n=  105  PnL   -50.72  per bet -0.4830
+            [0.85,0.95) NO   n=  153  PnL  -116.33  per bet -0.7603
+            [0.95,1.00) YES  n=   36  PnL    +0.42  per bet +0.0116
+
+VERDICT     DOES NOT SURVIVE at these costs. The bootstrap interval excludes zero.
+            Re-run with a larger --half-spread before believing anything positive.
+
+================================================================ horizon 720h, one leg per event
+DATA        /tmp/obs_current.csv
+            horizon 720h, 588 resolutions, one leg per event
+            resolution dates 2026-09-06 to 2026-10-03
+COSTS       half-spread 0.0100 on entry, fee on winnings 0.00%
+WALK-FWD    fit on first 235 resolutions, refit every 250; 170 bets placed out of 353 testable
+
+STRATEGY    total PnL -2.68 units over 170 bets
+            PnL per bet -0.0158  [95% event-clustered bootstrap -0.0869, +0.0547]
+            hit rate 40.6%   per-bet Sharpe -0.033
+            max drawdown -8.57 units   turnover 170 bets
+            distinct events 170
+
+BENCHMARKS  on the same bets, same costs
+            always-YES                   -2.80 units  (-0.0165 per bet)
+            always-NO                    +32.60 units  (+0.1918 per bet)
+            no-edge (mid, no signal)     -1.10 units  (-0.0065 per bet)
+
+BY BAND
+            [0.15,0.35) YES  n=   56  PnL    +1.21  per bet +0.0216
+            [0.35,0.65) YES  n=  108  PnL    -2.42  per bet -0.0224
+            [0.65,0.85) NO   n=    6  PnL    -1.46  per bet -0.2442
+
+VERDICT     INCONCLUSIVE at these costs. The bootstrap interval includes zero.
+            Re-run with a larger --half-spread before believing anything positive.
+
+================================================================ horizon 720h, all legs (shows the multi-leg artifact)
+DATA        /tmp/obs_current.csv
+            horizon 720h, 1850 resolutions, all legs
+            resolution dates 2026-09-06 to 2026-10-03
+COSTS       half-spread 0.0100 on entry, fee on winnings 0.00%
+WALK-FWD    fit on first 740 resolutions, refit every 250; 717 bets placed out of 1110 testable
+
+STRATEGY    total PnL +11.22 units over 717 bets
+            PnL per bet +0.0157  [95% event-clustered bootstrap -0.0314, +0.0657]
+            hit rate 46.0%   per-bet Sharpe 0.031
+            max drawdown -12.98 units   turnover 717 bets
+            distinct events 240
+
+BENCHMARKS  on the same bets, same costs
+            always-YES                   -16.28 units  (-0.0227 per bet)
+            always-NO                    +89.06 units  (+0.1242 per bet)
+            no-edge (mid, no signal)     +7.89 units  (+0.0110 per bet)
+
+BY BAND
+            [0.15,0.35) YES  n=  192  PnL    +9.99  per bet +0.0520
+            [0.35,0.65) NO   n=  453  PnL   +27.52  per bet +0.0608
+            [0.65,0.85) NO   n=   72  PnL   -26.29  per bet -0.3651
+
+VERDICT     INCONCLUSIVE at these costs. The bootstrap interval includes zero.
+            Re-run with a larger --half-spread before believing anything positive.
