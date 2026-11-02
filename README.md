@@ -44,6 +44,59 @@ horizons (only 2,929 have a quote a full 30 days out, because the price-history 
 itself is about 30 days), so the rows are different samples. Compare reliability within
 a horizon, not Brier across horizons.
 
+## Is it tradable? No, and that is the more useful result
+
+A reliability finding is a statement about frequencies. It is not a statement about money, and
+`analyse.py` says so itself in limitation 4: the quotes above are mids, not executable prices.
+`backtest.py` closes that gap and the answer is negative.
+
+The test estimates each band's bias **only on markets that have already resolved** and trades the
+ones resolving later, refitting as it walks forward. It charges a half-spread on entry because the
+quote is a mid, keeps **one position per mutually exclusive event** (the legs of a "who will win X"
+market are one bet, not many), and resamples whole events for the confidence interval.
+
+At the best-powered horizon, seven days, on the data to 4 October (34,589 markets, commit `dd32e53`),
+across **3,620 independent events**:
+
+| | PnL per unit staked | 95% event-clustered bootstrap |
+|---|---:|---|
+| **Strategy** | **−0.0274** | **−0.0437 to −0.0111** |
+| always-No | +0.1065 | |
+| always-Yes | +0.0181 | |
+| no-edge control (pay the mid) | −0.0189 | |
+
+The interval excludes zero, so this is not merely inconclusive: the strategy loses money. And the
+band attribution shows why. Buying Yes in the underpriced bands does make money (+0.056 per unit in
+the 15 to 35 band). Selling the overpriced bands destroys it: **−0.483 per unit in the 65 to 85
+band and −0.760 in the 85 to 95 band**. The overpriced half of the headline finding *reverses out of
+sample*.
+
+More data has made this worse, not better. The same seven-day test on all six harvests, to 19 October,
+loses **−0.0380 per unit over 5,879 events (bootstrap −0.0511 to −0.0257)**. The rest of this section
+quotes the 4 October run, which is the one recorded in `results_backtest.txt`.
+
+Two traps this exposes, both worth more than the result itself:
+
+1. **Multi-leg events manufacture fake profit.** Run the thirty-day horizon without
+   `--one-per-event` and the strategy shows +11.22 units, which looks like a win until you see that
+   always-No makes +89.06 on the same bets. The apparent edge was just "most legs of an event lose".
+2. **A calibration anomaly is not an edge.** The mispricing is real as a frequency statement and
+   worthless as a signal, because it sits in the bands where the payoff is most asymmetric and it is
+   not stable out of sample.
+
+Reproduce with the commands below. They read the current `observations_complete.csv`, so they return
+the six-harvest figures rather than the 4 October ones:
+
+```
+python3 backtest.py --horizon 168 --one-per-event
+python3 backtest.py --horizon 720 --one-per-event --half-spread 0.02
+python3 backtest.py --horizon 720                       # shows the multi-leg artifact
+```
+
+`results_backtest.txt` holds the 4 October output for three configurations, all at a half-spread of 0.01:
+seven days and thirty days with one leg per event, and thirty days with all legs.
+
+
 Resolution is much lower than in the earlier, truncated sample. That is composition,
 not a worse market: the complete weeks are dominated by short-dated Bitcoin up/down,
 football and esports markets quoted near 50 per cent, which carry little information a
@@ -514,6 +567,7 @@ No dependencies beyond the standard library, except matplotlib for the figure.
 
 | File | What it is |
 |---|---|
+| `backtest.py`, `results_backtest.txt` | Walk-forward tradability test net of half-spread, and its 4 October output |
 | `harvest.py` | Pulls resolved markets and their price paths; splits the window to get under Gamma's offset cap, and documents both truncation failures |
 | `analyse.py` | Reliability bands with Wilson intervals, Brier score with Murphy decomposition, both sample-size rules |
 | `observations_complete.csv`, `markets_complete.csv` | The complete sample (headline) |
