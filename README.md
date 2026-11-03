@@ -10,10 +10,8 @@ pairs**, at one hour, one day, seven days and thirty days before resolution.
 
 A prediction-market price is only a probability if it behaves like one: of everything
 the market prices at 70 per cent, roughly 70 per cent should happen. That is a
-*reliability* question, and it is the same question I ask of my own models' uncertainty
-in my PhD, where a multi-seed ensemble claiming 90 per cent coverage was found to
-deliver 58.9 per cent, and split conformal prediction repaired it to 94.6 per cent
-without retraining. This repository points the same discipline at market prices.
+*reliability* question, and it is the same question I ask of any model's stated uncertainty:
+does a claimed 90 per cent interval really cover 90 per cent? This repository points the same discipline at market prices.
 
 ## Headline result
 
