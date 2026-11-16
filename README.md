@@ -1,7 +1,7 @@
 # Are Polymarket prices calibrated probabilities?
 
-A reliability study of resolved Polymarket markets. The headline sample is **seven complete,
-tiled harvests of resolutions, 6 September to 9 November 2026: 86,173 markets and 196,394 quote–outcome
+A reliability study of resolved Polymarket markets. The headline sample is **eight complete,
+tiled harvests of resolutions, 6 September to 16 November 2026: 92,925 markets and 211,162 quote–outcome
 pairs**, at one hour, one day, seven days and thirty days before resolution.
 
 ![reliability diagram](reliability.png)
@@ -22,26 +22,27 @@ from the fifth week, 95 to 100 per cent) join them, by fractions of a point, and
 harvest the 95 to 100 per cent band does so at one day as well. The 35 to 65 per cent band,
 which holds most of the book, is consistent with its quotes at one hour and one day, and at seven days once quotes are
 grouped by event (on Wilson alone it now reads one point overpriced there). From the fourth week the same shape is visible at seven days on both sides, and at
-thirty days on both sides, though more weakly there; the fifth to seventh harvests left all of that in place.
+thirty days on both sides, though more weakly there; the fifth to eighth harvests left all of that in place,
+and from the eighth the seven-day 85 to 95 per cent band joins it (overpriced by 2.7 points, clear of zero by event).
 The one exception, from the seventh harvest, is the thirty-day 85 to 95 per cent band, which became testable and
 reads *underpriced*, against the shape; it rests largely on a single election night and is not yet evidence of
 anything (see below).
 
-This replaces two earlier headlines, both withdrawn below. It now rests on seven complete,
-consecutive harvests, and the shape held across the second to seventh without being
+This replaces two earlier headlines, both withdrawn below. It now rests on eight complete,
+consecutive harvests, and the shape held across the second to eighth without being
 softened away; two weeks was the minimum this study had set itself before calling the
 pattern persistent. It still comes with a caution that may yet kill it: noisy quotes produce
 exactly this shape on their own (see *What could explain it*).
 
 | Quote taken | n | Brier | reliability ↓ | resolution ↑ | uncertainty | beats base rate by |
 |---|---:|---:|---:|---:|---:|---:|
-| 30 days before | 4,252 | 0.1485 | 0.0022 | 0.0879 | 0.2361 | 0.0876 |
-| 7 days before | 41,272 | 0.2031 | 0.0005 | 0.0390 | 0.2451 | 0.0421 |
-| 1 day before | 75,331 | 0.2160 | 0.0015 | 0.0314 | 0.2473 | 0.0312 |
-| 1 hour before | 75,539 | 0.1900 | 0.0017 | 0.0578 | 0.2472 | 0.0572 |
+| 30 days before | 4,419 | 0.1514 | 0.0021 | 0.0853 | 0.2365 | 0.0851 |
+| 7 days before | 43,795 | 0.2041 | 0.0006 | 0.0380 | 0.2451 | 0.0410 |
+| 1 day before | 81,385 | 0.2169 | 0.0016 | 0.0305 | 0.2473 | 0.0304 |
+| 1 hour before | 81,563 | 0.1910 | 0.0017 | 0.0570 | 0.2472 | 0.0562 |
 
 **Do not read the Brier column across rows.** Different markets survive at different
-horizons (only 4,252 have a quote a full 30 days out, because the price-history window
+horizons (only 4,419 have a quote a full 30 days out, because the price-history window
 itself is about 30 days), so the rows are different samples. Compare reliability within
 a horizon, not Brier across horizons.
 
@@ -102,6 +103,61 @@ Resolution is much lower than in the earlier, truncated sample. That is composit
 not a worse market: the complete weeks are dominated by short-dated Bitcoin up/down,
 football and esports markets quoted near 50 per cent, which carry little information a
 day out by construction.
+
+## What the eighth harvest bought, 16 November 2026
+
+The eighth harvest ran a week after the seventh with a 30-day window (17 October to 16 November),
+so it overlapped the previous runs by about 23 days; 34,920 markets appeared in both and were
+deduplicated on market and horizon. It added 6,752 markets and 14,768 quote–outcome pairs. About
+6,200 of the new markets closed 9 to 16 November; the other roughly 540 closed earlier but were not
+in the previous run. The harvest found 42,814 eligible markets in 30 days, about 1,430 a day against
+1,480 the run before, so it was not truncated; 161 were dropped for not settling to a clean binary,
+981 for lack of served history (the oldest days of the window ageing out), none to a network failure.
+The week after the midterms was quiet: 860 to 1,260 new closures a day against 1,100 to 2,200 the week before.
+
+```
+RELIABILITY -- quote taken 7 days before resolution   (n = 43795)
+     quoted band     n  mean quote  realised           95% CI   verdict
+           0%-5%  2320       1.9%      1.8% [ 1.3%,  2.4%]   consistent with the quote
+          5%-15%  3067       9.6%     12.4% [11.3%, 13.6%]   market UNDERPRICED this band
+         15%-35%  8789      25.4%     28.6% [27.7%, 29.6%]   market UNDERPRICED this band
+         35%-65% 23556      49.1%     47.9% [47.3%, 48.5%]   market OVERPRICED this band
+         65%-85%  4044      73.5%     68.5% [67.0%, 69.9%]   market OVERPRICED this band
+         85%-95%  1255      90.0%     87.3% [85.3%, 89.0%]   market OVERPRICED this band
+        95%-100%   764      97.3%     98.6% [97.4%, 99.2%]   market UNDERPRICED this band
+```
+
+Cluster bootstrap by Polymarket event, as before (gap is quote minus outcome, in points):
+
+| Horizon, band | n | events | gap | 95% cluster CI | survives? |
+|---|---:|---:|---:|---|---|
+| 30 days, 15–35% | 546 | 381 | −7.1 | [−11.2, −3.0] | yes |
+| 30 days, 35–65% | 1,824 | 693 | +3.0 | [−0.3, +6.2] | **no** |
+| 30 days, 65–85% | 232 | 209 | +13.2 | [+6.6, +20.1] | yes |
+| 30 days, 85–95% | 164 | 162 | −5.1 | [−8.0, −1.5] | yes, but midterm-driven |
+| 7 days, 35–65% | 23,556 | 12,316 | +1.2 | [+0.4, +2.1] | yes |
+| 7 days, 85–95% | 1,255 | 1,157 | +2.7 | [+0.9, +4.8] | yes |
+| 7 days, 95–100% | 764 | 700 | −1.3 | [−2.0, −0.4] | yes, but midterm-driven |
+| 1 day, 95–100% | 1,543 | 1,142 | +1.1 | [+0.2, +2.0] | yes |
+| 1 hour, 35–65% | 45,335 | 36,103 | +0.5 | [−0.0, +1.0] | **no** |
+| 1 hour, 95–100% | 6,002 | 4,075 | +0.4 | [+0.2, +0.7] | yes |
+
+**No band became testable.** The only band still withheld, thirty days at 95 to 100 per cent,
+has 346 quotes and still only 2 of the rarer outcome. The thirty-day 85 to 95 per cent band
+remains a midterm artefact: without 4 November it is n = 63 with 3 of the rarer outcome.
+
+**The seven-day 85 to 95 per cent band flipped from consistent to overpriced** (90.0 quoted,
+87.3 realised, n = 1,255), and it survives clustering by event. It is not a midterm effect:
+without 4 November it reads 89.9 against 86.5. The new week drove it: 75 new quotes in the band
+resolved Yes only 69 per cent of the time, spread over 65 events (crypto price thresholds,
+football totals, basketball), so it is not one event. With it, the seven-day horizon now shows
+the overshoot in every band from 5 to 95 per cent. The flip rests on one week's additions,
+so the next harvest is the check on it.
+
+**The one-hour 35 to 65 per cent band is not reported.** It reads half a point overpriced on
+Wilson but spans zero by event, as the seven-day band did before it settled.
+
+**Everything else held.** The 4 November caveats from the seventh harvest are unchanged.
 
 ## What the seventh harvest bought, 9 November 2026
 
@@ -568,7 +624,7 @@ shape shrinks as the quote gets cleaner, it was noise.
    clearing the mean quote by 0.02 percentage points. But k = 2. The entire result
    rested on two markets resolving Yes. The rule refuses a verdict on any band with
    fewer than five of the rarer outcome, and on the current sample it still withholds a
-   verdict on the 95 to 100 band at thirty days (n = 345, k = 2). The 95 to 100 band at
+   verdict on the 95 to 100 band at thirty days (n = 346, k = 2). The 95 to 100 band at
    seven days was withheld the same way for five weeks, at n = 170 with two of the rarer
    outcome, when it would have looked decisively well calibrated on n alone; it cleared on
    19 October at n = 260, k = 5, and reads consistent. The 85 to 95 band at thirty days
@@ -590,9 +646,9 @@ the truncation. Its output is in `results_truncated_series.txt` and
 
 ## Limitations, stated because they bound the conclusion
 
-1. **Seven harvests.** The headline rests on seven complete, consecutive harvests of
-   resolutions, 6 September to 9 November. The second week was the minimum this study set
-   for calling the shape persistent, and the shape held through the third to seventh.
+1. **Eight harvests.** The headline rests on eight complete, consecutive harvests of
+   resolutions, 6 September to 16 November. The second week was the minimum this study set
+   for calling the shape persistent, and the shape held through the third to eighth.
    Event clustering does not capture shocks shared across events: the 4 November midterms
    are hundreds of separate events that move as one, which is why the seventh harvest's
    upper-tail changes are reported with and without that day. Consecutive is not the same as independent, though: the weeks share
@@ -628,7 +684,7 @@ python3 analyse.py --obs observations_complete.csv --markets markets_complete.cs
 ```
 
 Run weekly with `--days 7` so consecutive harvests tile the timeline (or `--days 8` for a
-one-day overlap, which the merge deduplicates; the 27 September and 4 October harvests did this, the 10 October harvest ran `--days 7` six days after the last one, the 19 October harvest ran `--days 10` nine days after it, and the 9 November harvest ran `--days 22` three weeks after that). Check the eligible
+one-day overlap, which the merge deduplicates; the 27 September and 4 October harvests did this, the 10 October harvest ran `--days 7` six days after the last one, the 19 October harvest ran `--days 10` nine days after it, the 9 November harvest ran `--days 22` three weeks after that, and the 16 November harvest ran `--days 30` a week later, deduplicating the 23-day overlap). Check the eligible
 count against the previous week before merging: the harvest on 19 September ended at
 offset 1,000 on a transient network failure and returned 900 eligible against the
 previous week's 8,595. It said so in a `WARNING` line and its counts were a lower bound,

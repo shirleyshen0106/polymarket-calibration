@@ -1,10 +1,10 @@
 {
-  "harvest_date": "2026-11-09T23:38:26Z",
-  "days": 22,
+  "harvest_date": "2026-11-16T02:16:01Z",
+  "days": 30,
   "min_volume": 10000,
-  "eligible": 32555,
-  "kept": 32175,
-  "dropped_unresolved": 117,
-  "dropped_nohistory": 263,
+  "eligible": 42814,
+  "kept": 41672,
+  "dropped_unresolved": 161,
+  "dropped_nohistory": 981,
   "dropped_fetch_error": 0
 }
